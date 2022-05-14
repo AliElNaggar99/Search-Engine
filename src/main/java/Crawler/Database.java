@@ -21,6 +21,8 @@ public class Database {
         System.setProperty("jdk.tls.trustNameService", "true");
         MongoClientURI uri = new MongoClientURI("mongodb://sherno:asd123@cluster0-shard-00-00.u308m.mongodb.net:27017,cluster0-shard-00-01.u308m.mongodb.net:27017,cluster0-shard-00-02.u308m.mongodb.net:27017/CrawlerDB?ssl=true&replicaSet=atlas-nliwzr-shard-0&authSource=admin&w=majority");
         this.mongoClient  = new MongoClient(uri);;
+        //for local connection
+        this.mongoClient = new MongoClient("localhost", 27017);
         crawlerDB =  mongoClient.getDB("CrawlerDB");
         crawlerCollection = crawlerDB.getCollection("Links");
         hrefCollection = crawlerDB.getCollection("hrefs");
@@ -33,6 +35,8 @@ public class Database {
 
 
     }
+
+
     void updateHref(List<String> Link,String baseURL){
 
         DBCursor cur =  crawlerCollection.find(new BasicDBObject("URL", baseURL));
@@ -143,7 +147,7 @@ public class Database {
             Visited.add(URL);
         }
     }
-    void getVisited(List<String> queue){
+    public void getVisited(List<String> queue){
         DBCursor cur =  crawlerCollection.find(new BasicDBObject("Visited", 1));
         int size = cur.size();
         for(int i = 0 ;i< size;i++) {
