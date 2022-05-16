@@ -52,6 +52,8 @@ public class Scraper {
             //the previous code block searches up the url sent in both the allowed and forbidden lists to check whether it is
             //allowed or not to keep scraping it or no
 
+
+            //scraping part
             Document htmlDocument = Jsoup.connect(url).get();
             this.htmlDocument = Jsoup.parse(htmlDocument.toString());
             for (Element metaTag : this.htmlDocument.getElementsByTag("meta")) {
