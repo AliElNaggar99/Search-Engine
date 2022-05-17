@@ -1,0 +1,877 @@
+<!doctype html>
+<html lang="en-US"> 
+ <head prefix="og: http://ogp.me/ns# flixstertomatoes: http://ogp.me/ns/apps/flixstertomatoes#"> 
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+  <meta property="og.description" content=""> 
+  <meta name="description" content=""> 
+  <meta property="og:title" content="Scare Central"> 
+  <meta property="og:type" content="article"> 
+  <meta property="og:image" content="https://prd-rteditorial.s3.us-west-2.amazonaws.com/wp-content/uploads/2019/10/08103715/SCARE_CENTRAL_600x314.jpg"> 
+  <meta property="og:url" content="https://editorial.rottentomatoes.com/rt-hub/scare-central/"> 
+  <meta name="editorialID" content="59640"> 
+  <meta property="fb:app_id" content="326803741017"> 
+  <meta property="twitter:card" content="summary_large_image"> 
+  <meta name="twitter:site" content="@rottentomatoes"> 
+  <meta name="twitter:title" content="Scare Central"> 
+  <meta name="twitter:description" content=""> 
+  <meta name="twitter:image" content="https://prd-rteditorial.s3.us-west-2.amazonaws.com/wp-content/uploads/2019/10/08103715/SCARE_CENTRAL_600x314.jpg"> 
+  <title>  Scare Central &lt;&lt; Rotten Tomatoes – Movie and TV News</title> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="pingback" href="https://editorial.rottentomatoes.com/xmlrpc.php"> <!-- Make customizable later --> 
+  <link href="https://editorial.rottentomatoes.com/wp-content/themes/RottenTomatoes/css/bootstrap.css" rel="stylesheet"> 
+  <link href="https://editorial.rottentomatoes.com/wp-content/themes/RottenTomatoes/css/redesign.css" rel="stylesheet"> 
+  <link href="https://editorial.rottentomatoes.com/wp-content/themes/RottenTomatoes/css/hub.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://editorial.rottentomatoes.com/wp-content/themes/RottenTomatoes/css/rtmobilenav.css"> 
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.min.css" rel="stylesheet"> 
+  <link rel="icon" type="image/x-icon" href="https://static.rottentomatoes.com/static/images/icons/favicon.ico"> 
+  <script>
+        // Push column to dataLayer
+        var dataLayer = dataLayer || [];
+
+        dataLayer.push({
+          "post-url": "https:\/\/editorial.rottentomatoes.com\/rt-hub\/scare-central\/",
+          "column": "",
+          "hub":59640,
+          "author": "rt-staff",
+          "related-tv-series-ids": [],
+          "related-movie-ids": [],
+          "publication-date": "10\/25\/2019",
+          "related-celebrity-ids": [],
+          "franchise": "",
+          "tags": ""        });
+    </script> 
+  <script>
+        var mpscall = mpscall || {};
+        mpscall = {
+            "site":"rottentomatoes-web",
+            "field[env]": "production", // execution environment
+            "type": "rt-hub",
+            "cat": "article|home"
+        };
+
+        var mpsopts = {
+         "host":"mps.nbcuni.com",
+         "updatecorrelator":true
+        }
+
+        var BK = {};
+
+        BK.PageName="https:\/\/editorial.rottentomatoes.com\/rt-hub\/scare-central\/";
+        BK.SiteSection="rt-hub";
+        BK.ArticleTags="";
+        BK.RelatedMovieId=[];
+        BK.RelatedTalentId=[];
+        BK.RelatedTVSeriesId=[];
+
+        var mps=mps||{};mps._ext=mps._ext||{};mps._adsheld=[];mps._queue=mps._queue||{};mps._queue.mpsloaded=mps._queue.mpsloaded||[];mps._queue.mpsinit=mps._queue.mpsinit||[];mps._queue.gptloaded=mps._queue.gptloaded||[];mps._queue.adload=mps._queue.adload||[];mps._queue.adclone=mps._queue.adclone||[];mps._queue.adview=mps._queue.adview||[];mps._queue.refreshads=mps._queue.refreshads||[];mps.__timer=Date.now();mps.__intcode="v2";if(typeof mps.getAd!="function")mps.getAd=function(adunit){if(typeof adunit!="string")return false;var slotid="mps-getad-"+adunit.replace(/\W/g,"");if(!mps._ext||!mps._ext.loaded){mps._queue.gptloaded.push(function(){typeof mps._gptfirst=="function"&&mps._gptfirst(adunit,slotid);mps.insertAd("#"+slotid,adunit)});mps._adsheld.push(adunit)}return'<div id="'+slotid+'" class="mps-wrapper" data-mps-fill-slot="'+adunit+'"></div>'};(function(){head=document.head||document.getElementsByTagName("head")[0],mpsload=document.createElement("script");mpsload.src="//"+mpsopts.host+"/fetch/ext/load-"+mpscall.site+".js?nowrite=2";mpsload.id="mps-load";head.insertBefore(mpsload,head.firstChild)})();
+    </script> 
+  <script type="text/javascript">
+        var RT = RT || {};
+        RT.rtUrl = "https://www.rottentomatoes.com";
+        RT.rtApiUrl = "https://static.rottentomatoes.com";
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+        googletag.unitIds = [];
+        (function() {
+        var gads = document.createElement('script');
+        gads.async = true;
+        gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') +
+        '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+        })();
+    </script> 
+  <script src="//cdn.optimizely.com/js/594670329.js"></script> <!-- Facebook Pixel Code --> 
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function()
+    {n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)}
+    ;if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1147905821962466');
+    fbq('track', 'PageView');
+    </script> 
+  <noscript>
+    &lt;img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1147905821962466&amp;amp;ev=PageView&amp;amp;noscript=1"&gt; 
+  </noscript> <!-- DO NOT MODIFY --> <!-- End Facebook Pixel Code --> <!-- Chartbeat Code --> 
+  <script type="text/javascript">
+          var _sf_async_config = _sf_async_config || {};
+          /** CONFIGURATION START **/
+          _sf_async_config.uid = 64558; // ACCOUNT NUMBER
+          _sf_async_config.domain = 'rottentomatoes.com'; // DOMAIN
+          _sf_async_config.flickerControl = false;
+          _sf_async_config.useCanonical = true;
+          /** CONFIGURATION END **/
+          var _sf_startpt = (new Date()).getTime();
+    </script> 
+  <script async src="//static.chartbeat.com/js/chartbeat_mab.js"></script> 
+  <script type="text/javascript" src="//player.theplatform.com/pdk/dCK2IC/tpPdkController.js?pdk=5.7.5&amp;logLevel=debug" onload="$pdk.bind(this, true); $pdk.controller.setIFrame(this, true);"></script> 
+  <script src="//assets.adobedtm.com/a5fa26c3da5356c4d77ae8244dc4eb5096e2f4b0/satelliteLib-cbce2cb5d7b476a55d4d651acf340e0592b4f00c.js"></script> 
+  <meta name="robots" content="max-image-preview:large"> 
+  <link rel="dns-prefetch" href="//s.w.org"> 
+  <script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/editorial.rottentomatoes.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.1"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script> 
+  <style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style> 
+  <link rel="stylesheet" id="wp-block-library-css" href="https://editorial.rottentomatoes.com/wp-includes/css/dist/block-library/style.min.css?ver=5.8.1" type="text/css" media="all"> 
+  <link rel="stylesheet" id="mediaelement-css" href="https://editorial.rottentomatoes.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16" type="text/css" media="all"> 
+  <link rel="stylesheet" id="wp-mediaelement-css" href="https://editorial.rottentomatoes.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=5.8.1" type="text/css" media="all"> 
+  <link rel="stylesheet" id="view_editor_gutenberg_frontend_assets-css" href="https://editorial.rottentomatoes.com/wp-content/plugins/toolset-blocks/public/css/views-frontend.css?ver=3.6.1" type="text/css" media="all"> 
+  <style id="view_editor_gutenberg_frontend_assets-inline-css" type="text/css">
+.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item a {color: #444;background-color: #fff;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:focus {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #eee;}
+.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item a {color: #444;background-color: #fff;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:focus {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item a {color: #444;background-color: #eeeeee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:focus {color: #000;background-color: #e5e5e5;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #e5e5e5;}
+.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item a {color: #444;background-color: #fff;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:focus {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item a {color: #444;background-color: #eeeeee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:focus {color: #000;background-color: #e5e5e5;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #e5e5e5;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item {border-color: #0099cc;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item a {color: #444;background-color: #cbddeb;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue a:focus {color: #000;background-color: #95bedd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #95bedd;}
+</style> 
+  <link rel="stylesheet" id="media-credit-css" href="https://editorial.rottentomatoes.com/wp-content/plugins/media-credit/public/css/media-credit.min.css?ver=4.2.1" type="text/css" media="all"> 
+  <link rel="stylesheet" id="stylesheet-css" href="https://editorial.rottentomatoes.com/wp-content/themes/RottenTomatoes/style.css?ver=1.1" type="text/css" media="all"> 
+  <script type="text/javascript" src="https://editorial.rottentomatoes.com/wp-content/plugins/toolset-blocks/vendor/toolset/common-es/public/toolset-common-es-frontend.js?ver=161000" id="toolset-common-es-frontend-js"></script> 
+  <script type="text/javascript" src="https://editorial.rottentomatoes.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script> 
+  <script type="text/javascript" src="https://editorial.rottentomatoes.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script> 
+  <script type="text/javascript" src="https://editorial.rottentomatoes.com/wp-content/plugins/wp-google-analytics-events/js/ga-scroll-events.js?ver=2.5.3" id="scrolldepth-js"></script> 
+  <script type="text/javascript" id="sranalytics-js-extra">
+/* <![CDATA[ */
+var sranalytics = {"version":"0.1.4","pid":"563cb84e736b79c3db00006c","iframe":"0","title":"Scare Central","url":"https:\/\/editorial.rottentomatoes.com\/rt-hub\/scare-central\/","date":"2019-10-25 16:54:48","channels":[],"tags":[],"authors":[""]};
+/* ]]> */
+</script> 
+  <script type="text/javascript" src="https://editorial.rottentomatoes.com/wp-content/plugins/sranalytics_wordpress-0.1.5/javascripts/sranalytics.js?ver=5.8.1" id="sranalytics-js"></script> 
+  <link rel="https://api.w.org/" href="https://editorial.rottentomatoes.com/wp-json/"> 
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://editorial.rottentomatoes.com/xmlrpc.php?rsd"> 
+  <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://editorial.rottentomatoes.com/wp-includes/wlwmanifest.xml"> 
+  <meta name="generator" content="WordPress 5.8.1"> 
+  <link rel="canonical" href="https://editorial.rottentomatoes.com/rt-hub/scare-central/"> 
+  <link rel="shortlink" href="https://editorial.rottentomatoes.com/?p=59640"> 
+  <link rel="alternate" type="application/json+oembed" href="https://editorial.rottentomatoes.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Feditorial.rottentomatoes.com%2Frt-hub%2Fscare-central%2F"> 
+  <link rel="alternate" type="text/xml+oembed" href="https://editorial.rottentomatoes.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Feditorial.rottentomatoes.com%2Frt-hub%2Fscare-central%2F&amp;format=xml"> 
+  <style type="text/css">p.publication-date { display:none }</style> 
+  <style>
+        .getty.aligncenter {
+            text-align: center;
+        }
+        .getty.alignleft {
+            float: none;
+            margin-right: 0;
+        }
+        .getty.alignleft > div {
+            float: left;
+            margin-right: 5px;
+        }
+        .getty.alignright {
+            float: none;
+            margin-left: 0;
+        }
+        .getty.alignright > div {
+            float: right;
+            margin-left: 5px;
+        }
+        </style> 
+  <link rel="https://github.com/WP-API/WP-API" href="https://editorial.rottentomatoes.com/wp-json"> 
+  <script> window.addEventListener("load",function(){ var c={script:false,link:false}; function ls(s) { if(!['script','link'].includes(s)||c[s]){return;}c[s]=true; var d=document,f=d.getElementsByTagName(s)[0],j=d.createElement(s); if(s==='script'){j.async=true;j.src='https://editorial.rottentomatoes.com/wp-content/plugins/toolset-blocks/vendor/toolset/blocks/public/js/frontend.js?v=1.6.0';}else{ j.rel='stylesheet';j.href='https://editorial.rottentomatoes.com/wp-content/plugins/toolset-blocks/vendor/toolset/blocks/public/css/style.css?v=1.6.0';} f.parentNode.insertBefore(j, f); }; function ex(){ls('script');ls('link')} window.addEventListener("scroll", ex, {once: true}); if (('IntersectionObserver' in window) && ('IntersectionObserverEntry' in window) && ('intersectionRatio' in window.IntersectionObserverEntry.prototype)) { var i = 0, fb = document.querySelectorAll("[class^='tb-']"), o = new IntersectionObserver(es => { es.forEach(e => { o.unobserve(e.target); if (e.intersectionRatio > 0) { ex();o.disconnect();}else{ i++;if(fb.length>i){o.observe(fb[i])}} }) }); if (fb.length) { o.observe(fb[i]) } } }) </script> 
+  <noscript> 
+   <link rel="stylesheet" href="https://editorial.rottentomatoes.com/wp-content/plugins/toolset-blocks/vendor/toolset/blocks/public/css/style.css"> 
+  </noscript> 
+  <link rel="icon" href="https://prd-rteditorial.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/05/09104817/favicon.png" sizes="32x32"> 
+  <link rel="icon" href="https://prd-rteditorial.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/05/09104817/favicon.png" sizes="192x192"> 
+  <link rel="apple-touch-icon" href="https://prd-rteditorial.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/05/09104817/favicon.png"> 
+  <meta name="msapplication-TileImage" content="https://prd-rteditorial.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/05/09104817/favicon.png"> 
+  <script>
+                if (typeof ga === 'undefined') {
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+                  ga('create','UA-2265251-1', 'editorial.rottentomatoes.com');                  ga('send', 'pageview');
+                                }
+            </script> 
+  <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="FY54K-R3QDX-VKS32-UEVJ8-QAXP2",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"FY54K-R3QDX-VKS32-UEVJ8-QAXP2",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="myuz5vc7mwpn2yud6foa-f-05460002e-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,_={"ak.v":"32","ak.cp":"899812","ak.ai":parseInt("576128",10),"ak.ol":"0","ak.cr":52,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"5e93d775","ak.r":6013,"ak.a2":e,"ak.m":"dscx","ak.n":"essl","ak.bpcip":"102.41.158.0","ak.cport":59651,"ak.gh":"79.140.80.224","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"reno","ak.t":"1652814172","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==LAJ8KLsLDVXA1wxqLNG7Zwihksh7fVLHt5mYmiKp1cXh5/X0ehpIRvtl1pSUn46umyJ5pjC9hrns4QAUyGNd8CHMrm9qvUOD8BHr/4qlARt6HFWYxAYvmWQlELxJ2NgLcL025e/MEPFYdewKF/9mRGRbGJQXTyeqo5OUAoZdOI10X+zOTO2j+7BAqCQyBJkQ6OCOQg14prV9H1B6KtJrkrKgH31GroDD7D/M7GMq5DVyL2Hz5liHjf3Ew5zHdxXTcTIu7hrcAnHFVEbkjoyyLrRM/TtFuIlcwgRPPIrva8O/FIKfIBvFSuMfb5kuL8zuOftJEPrwG0WLMkq0+f7tItSat8/H/PNhyfKdR8bnRUpOcwBvTgfgcEczdT19R+IH2gLxQ7b2w09PeYIfbMbq8sBtVT2kXJUUaR/Cym1DyLc=","ak.pv":"5","ak.dpoabenc":"","ak.tf":i};if(""!==t)_["ak.ruds"]=t;var o={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))_["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(_)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:_,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a("before_beacon",o.av,null,null),a("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script> 
+ </head> 
+ <body class="body"> <!-- Google Tag Manager --> 
+  <noscript> <iframe src="//www.googletagmanager.com/ns.html?id=GTM-KZKXN6" height="0" width="0" style="display:none;visibility:hidden"></iframe> 
+  </noscript> 
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KZKXN6');</script> <!-- End Google Tag Manager --> 
+  <div id="navMenu" class="modal fade" role="dialog" aria-labelledby="navMenu"> 
+   <div class="modal-dialog"> 
+    <div class="modal-content"> 
+     <div class="modal-body"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span class="glyphicon glyphicon-remove"></span> </button> 
+      <div class="pull-left"> 
+       <ul class="list-inline social"> 
+        <li><a id="header-facebook-social-link" class="unstyled fontelloIcon icon-facebook-squared" href="https://www.facebook.com/rottentomatoes" target="_blank"></a></li> 
+        <li><a id="header-twitter-social-link" class="unstyled fontelloIcon icon-twitter" href="https://twitter.com/rottentomatoes" target="_blank"></a></li> 
+       </ul> 
+      </div> 
+      <div class="items"> 
+       <div class="item"> <a class="homeTab unstyled navLink fullLink" href="https://www.rottentomatoes.com/"> Home </a> 
+       </div> 
+       <div class="item"> <a class="boxofficeTab unstyled navLink fullLink" href="https://www.rottentomatoes.com/lists/theater/"> Top Box Office </a> 
+       </div> 
+       <div class="item"> <a class="theatersTab unstyled navLink fullLink" href="https://www.rottentomatoes.com/theaters/"> Tickets &amp; Showtimes </a> 
+       </div> 
+       <div class="item"> <a class="dvdTab unstyled navLink fullLink" href="https://www.rottentomatoes.com/lists/dvd/"> DVD &amp; Streaming </a> 
+       </div> 
+       <div class="item"> <a class="tvTab unstyled navLink fullLink" href="https://www.rottentomatoes.com/lists/tv/"> TV </a> 
+       </div> 
+       <div class="item"> <a class="newsTab unstyled navLink fullLink" href="https://editorial.rottentomatoes.com"> News </a> 
+       </div> <!--                    <div class="item">--> <!--                        <a class="newsletterTab unstyled navLink fullLink" href="--><!--/newsletter/">--> <!--                            Join Newsletter--> <!--                        </a>--> <!--                    </div>--> 
+      </div> 
+      <div class="loginArea"> <a href="#signup" data-toggle="modal" data-target="#signup" class="signupLink login">SIGN UP</a> <a href="#login" data-toggle="modal" data-target="#login" class="loginLink login">LOG IN</a> 
+       <div class="userProfile" style="display:none"> <a class="userProfileLink"> 
+         <div class="media"> 
+          <div class="pull-left"> 
+           <img class="media-object" src="//graph.facebook.com/v2.2/100001988417196/picture"> 
+          </div> 
+          <div class="pull-right"> <span class="glyphicon glyphicon-cog"></span> 
+          </div> 
+          <div class="media-body"> <span class="name">Jester McGree</span> 
+          </div> 
+         </div> </a> 
+       </div> 
+       <div class="logoutRow" style="display:none"> <a class="logout" href="/logout/"> Logout </a> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="body_main container"> 
+   <div id="top_leaderboard_wrapper" class="leaderboard_wrapper"> 
+    <div class="leaderboard_helper"> 
+     <div id="leaderboard_top_ad"></div> 
+     <script>
+                //--RESPONSIVE AD SWITCHING (DIFFERENT CONTAINERS)
+                var mps=mps||{}; mps._queue=mps._queue||{}; mps._queue.gptloaded=mps._queue.gptloaded||[];
+                mps._queue.gptloaded.push(function() {
+                    if (mps.getResponsiveSet() =='0') { //MOBILE
+                        mps.insertAd('#leaderboard_top_ad','mbanner');
+                    } else { //DESKTOP or TABLET
+                        mps.insertAd('#leaderboard_top_ad','topbanner');
+                    }
+                });
+            </script> 
+    </div> 
+   </div> 
+   <div class="header_main container"> 
+    <div id="navbar" class="navbar navbar-rt" role="navigation"> 
+     <div class="navbar-header pull-right hidden-xs"> 
+      <div class="header_links"> <a id="header-whats-the-tomatometer" href="https://www.rottentomatoes.com/about/">What's the Tomatometer?®</a> <a id="header-top-bar-critics" href="https://www.rottentomatoes.com/critics/">RT Critics</a> <!--<a id="header-top-bar-newsletter" href="--><!--/newsletter/">Newsletter</a>--> 
+      </div> 
+     </div> 
+     <div id="header_brand_column" class="col-sm-13 col-full-xs"> 
+      <div class="hidden-xs desktopNav"> <!-- Logo --> 
+       <div class="navbar-brand"> <a id="header-rt-logo" href="https://www.rottentomatoes.com/"> <img src="//staticv2-4.rottentomatoes.com/static/images/logos/rtlogo.png"> </a> 
+       </div> 
+       <div id="rt_logo_ad" style="display:none;"></div> 
+       <script>
+                        var mps=mps||{}; mps._queue=mps._queue||{}; mps._queue.gptloaded=mps._queue.gptloaded||[];
+                        mps._queue.gptloaded.push(function() {
+                            if (mps.getResponsiveSet() !='0') { //DESKTOP or TABLET
+                                mps.rt.insertlogo('#rt_logo_ad', 'ploc=rtlogo;');
+                            }
+                        });
+                    </script> <!-- Search box --> 
+       <div id="desktop-search-root"> 
+        <form action="/search/" method="get"> 
+         <div class="navbar-searchbox main"> 
+          <div class="input-group"> 
+           <input name="search" type="text" class="form-control" placeholder="Search movies, TV, actors, more..." name="srch-term" id="search-term"> 
+           <div class="input-group-btn"> <button type="submit" class="btn btn-default searchBtn"> <em class="glyphicon glyphicon-search"></em> </button> 
+           </div> 
+           <div class="navbar-close"> <button type="button" class="btn btn-default"> <span class="glyphicon glyphicon-remove"></span> </button> 
+           </div> 
+          </div> 
+         </div> 
+        </form> 
+       </div> 
+      </div> 
+      <div id="mobile-nav" class="visible-xs mobileNav"> 
+       <div> <a id="mobile-search-button"> <button class="pull-right navbar-button searchButton"> <em class="glyphicon glyphicon-search white"></em> </button> </a> 
+       </div> 
+       <div class="navbar-brand"> <a id="header-rt-logo" href="https://www.rottentomatoes.com/"> <img src="//staticv2-4.rottentomatoes.com/static/images/logos/rtlogo.png"> </a> 
+       </div> 
+       <div class="mob-nav-bottom clearfix"> 
+        <ul id="nav-list" class="nav-list"> 
+         <li class="nav-item"> <a href="https://www.rottentomatoes.com"><i class=" fontelloIcon icon-home"></i>Home</a> </li> 
+         <li class="nav-item"> <a href="https://www.rottentomatoes.com/lists/theater/"><i class=" fontelloIcon icon-boxoffice"></i>Box Office</a> </li> 
+         <li class="nav-item"> <a href="https://www.rottentomatoes.com/lists/tv/"><i class=" fontelloIcon icon-tv2"></i>TV</a> </li> 
+         <li class="nav-item"> <a href="https://www.rottentomatoes.com/lists/dvd/"><i class=" fontelloIcon icon-redeem"></i>DVD</a> </li> 
+         <li class="nav-item"> <a id="menu-btn" class="menu-btn" href="#"> <i class=" fontelloIcon icon-more"></i>MORE </a> </li> 
+        </ul> 
+       </div> 
+       <div id="mobile-nav-overlay" class="mobile-nav-overlay"> <!--mobile dropdown--> 
+        <ul class="mobile-menu-panel"> 
+         <li class="nav-item"><a href="https://editorial.rottentomatoes.com">News</a></li> 
+         <li class="nav-item clearfix d-block"> <!-- <div class="login-signup-box pull-left">
+                                    <a id="mobile-signup-btn" data-toggle="modal" data-target="#signup" class="signupLink login btn-login-signup" href="#signup">SIGN UP</a>
+                                    <a id="mobile-login-btn" data-toggle="modal" data-target="#login" class="loginLink login btn-login-signup" href="#login">LOG IN</a>
+                                </div> --> 
+          <div class="social-media-box pull-right"> <a href="https://www.facebook.com/rottentomatoes"> <i class="fontelloIcon icon-facebook-squared" aria-hidden="true"></i> </a> <a href="https://twitter.com/rottentomatoes"> <i class="fontelloIcon icon-twitter" aria-hidden="true"></i> </a> 
+          </div> </li> 
+        </ul> <!--mobile dropdown end--> 
+       </div> 
+      </div> <!--Mobile Nav END--> 
+     </div> 
+     <div id="menu" class="navbar-nav col-sm-11 hidden-xs"> 
+      <ul class="list-inline"> 
+       <li id="movieMenuTab" class="menuHeader center noSpacing"> <a id="movieMenu" class="h2" href="https://www.rottentomatoes.com/browse/">Movies &amp; DVDS<span class="fontelloIcon icon-down-dir"></span></a> </li> 
+       <li id="tvMenuTab" class="menuHeader center noSpacing"> <a id="tvMenu" class="h2" href="https://www.rottentomatoes.com/tv/">TV<span class="fontelloIcon icon-down-dir"></span></a> </li> 
+       <li id="newsMenuTab" class="menuHeader center noSpacing"> <a id="newsMenu" class="h2" href="https://editorial.rottentomatoes.com">News<span class="fontelloIcon icon-down-dir"></span></a> </li> 
+       <li class="menuHeader center noSpacing" style="border-radius: 5px" id="header-tickets-showtimes"> <a id="ticketingMenu" class="h2" href="https://www.rottentomatoes.com/showtimes/?adid=nav_TS">Tickets &amp; Showtimes</a> </li> 
+      </ul> 
+     </div> 
+    </div> 
+    <div class="trendingBar hidden-xs"> 
+     <div class="fr"> 
+      <ul id="trending_bar_social" class="list-inline social"> 
+       <li class="header">Follow Us</li> 
+       <li><a id="header-twitter-social-link" class="unstyled trendingLink fontelloIcon icon-twitter white" href="https://twitter.com/rottentomatoes" target="_blank"></a></li> 
+       <li><a id="header-facebook-social-link" class="unstyled trendingLink fontelloIcon icon-facebook-squared white" href="https://www.facebook.com/rottentomatoes" target="_blank"></a></li> 
+       <li><a id="header-google-social-link" class="unstyled trendingLink fontelloIcon icon-gplus white" href="https://plus.google.com/+RottenTomatoes" target="_blank"></a></li> 
+       <li><a id="header-youtube-social-link" class="unstyled trendingLink fontelloIcon icon-youtube-play white" href="https://www.youtube.com/user/rottentomatoes" target="_blank"></a></li> 
+       <li><a id="header-tumblr-social-link" class="unstyled trendingLink fontelloIcon icon-tumblr white" href="https://rottentomatoes.tumblr.com/" target="_blank"></a></li> 
+      </ul> 
+      <div id="trending_bar_ad" style="display:none;"></div> 
+      <script>
+                    var mps=mps||{}; mps._queue=mps._queue||{}; mps._queue.gptloaded=mps._queue.gptloaded||[];
+                    mps._queue.gptloaded.push(function() {
+                        if (mps.getResponsiveSet() !='0') { //DESKTOP or TABLET
+                            mps.insertAd('#trending_bar_ad','trendinggraphic');
+                        }
+                    });
+                </script> 
+     </div> 
+     <ul class="list-inline trendingEl"> 
+      <li class="header">Trending on RT</li> 
+     </ul> 
+    </div> <!-- start content container --> 
+    <div style="min-height: 528px; background: white;" class="container body_main container"> 
+     <div class="hubBanner"> 
+      <div class="hub-title-banner"> <a href="https://editorial.rottentomatoes.com/rt-hub/scare-central/"> <img src="https://s3-us-west-2.amazonaws.com/prd-rteditorial/wp-content/uploads/2019/10/08103720/SCARE_CENTRAL_1100x90.jpg"> </a> 
+      </div> 
+      <div class="hubBannerAd"> 
+       <div id="hub_ad" class="page_ad"></div> 
+       <script>
+            var mps=mps||{}; mps._queue=mps._queue||{}; mps._queue.gptloaded=mps._queue.gptloaded||[];
+            mps._queue.gptloaded.push(function() {
+                mps.rt.insertlogo('#hub_ad', 'ploc=headerlogo;');
+            });
+        </script> 
+      </div> 
+     </div> 
+     <div class="visible-xs"> 
+      <ul class="dropdown-menu" role="menu"> 
+       <li><a href="https://editorial.rottentomatoes.com/rt-hub/scare-central/" class="">Home</a> </li> 
+       <li><a href="https://editorial.rottentomatoes.com/hub-subpage/best-horror-movies/" class="">Best Horror Movies</a> </li> 
+       <li><a href="https://editorial.rottentomatoes.com/hub-subpage/more-guides/" class="">More Horror Guides</a> </li> 
+      </ul> <button type="button" class="dropdown-toggle btn btn-default" data-toggle="dropdown" aria-expanded="false"> Home</button> 
+     </div> 
+     <div class="hub-subnav-bar trendingBar hidden-xs " style="border-top:2px solid #fff"> 
+      <ul class="list-inline hub-nav-list"> 
+       <li><a class="unstyled trendingLink" href="https://editorial.rottentomatoes.com/rt-hub/scare-central/ "> Home </a> </li> 
+       <li> <a class="unstyled trendingLink" href="https://editorial.rottentomatoes.com/hub-subpage/best-horror-movies/">Best Horror Movies</a></li> 
+       <li> <a class="unstyled trendingLink" href="https://editorial.rottentomatoes.com/hub-subpage/more-guides/">More Horror Guides</a></li> 
+      </ul> 
+     </div> 
+     <div class="banner"> 
+      <div class="headline col-sm-12 col-xs-24"> 
+       <div id="headliners" class="headline carousel slide" data-ride="carousel"> 
+        <ol class="carousel-indicators hidden-xs"> 
+         <li data-target="#headliners" data-slide-to="0" class="">&lt;="" li=""&gt; </li> 
+         <li data-target="#headliners" data-slide-to="1" class="">&lt;="" li=""&gt; </li> 
+        </ol> 
+        <div class="carousel-inner"> 
+         <div class="headlineItem headlineItem item active"> 
+          <div class="sponsored-tag"> 
+           <p class="sponsored-text">FEATURED</p> 
+          </div> <a class="unstyled" href="https://editorial.rottentomatoes.com/guide/worst-horror-movies/"> 
+           <div class="bannerPic" style="background-image:url('https://s3-us-west-2.amazonaws.com/prd-rteditorial/wp-content/uploads/2019/10/01142127/550TheApparition.jpg');"></div> 
+           <div class="panel-rt bannerCaption subPanel"> 
+            <h3 class="panel-heading">Worst Horror Movies Ever</h3> 
+            <div class="panel-body"> 
+             <p class="title">Everything's below 10% on the Tomatometer</p> 
+            </div> 
+           </div> </a> 
+         </div> 
+         <div class="headlineItem headlineItem item "> 
+          <div class="sponsored-tag"> 
+           <p class="sponsored-text">FEATURED</p> 
+          </div> <a class="unstyled" href="https://editorial.rottentomatoes.com/guide/best-netflix-horror-movies-to-watch-right-now/"> 
+           <div class="bannerPic" style="background-image:url('https://s3-us-west-2.amazonaws.com/prd-rteditorial/wp-content/uploads/2019/10/01142704/600GeraldsGame.jpg');"></div> 
+           <div class="panel-rt bannerCaption subPanel"> 
+            <h3 class="panel-heading">Netflix Horror Movies</h3> 
+            <div class="panel-body"> 
+             <p class="title">The scariest films streaming</p> 
+            </div> 
+           </div> </a> 
+         </div> 
+        </div> <a class="left carousel-control" href="#headliners" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"> </span></a> <a class="right carousel-control" href="#headliners" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"> </span></a> 
+       </div> 
+      </div> 
+      <div id="homepage-spotlight1" class="headlineItem headline darkPanelItem inlineBlock col-sm-6 hidden-xs"> 
+       <div class="sponsored-tag"> 
+        <p class="sponsored-text">FEATURED</p> 
+       </div> <a class="unstyled" href="https://editorial.rottentomatoes.com/guide/best-horror-movies-of-all-time/"> 
+        <div class="bannerPic" style="background-image:url('https://s3-us-west-2.amazonaws.com/prd-rteditorial/wp-content/uploads/2019/10/01141922/274ItFollows.jpg');"></div> 
+        <div class="panel-rt bannerCaption subPanel"> 
+         <h3 class="panel-heading">Best Horror</h3> 
+         <div class="panel-body"> 
+          <p class="title">Strap in for spooky nights</p> 
+         </div> 
+        </div> </a> 
+      </div> 
+      <div id="homepage-spotlight2" class="headlineItem headline darkPanelItem inlineBlock col-sm-6 hidden-xs"> 
+       <div class="sponsored-tag"> 
+        <p class="sponsored-text">FEATURED</p> 
+       </div> <a class="unstyled" href="https://editorial.rottentomatoes.com/guide/best-horror-movies-of-2021-ranked/"> 
+        <div class="bannerPic" style="background-image:url('https://prd-rteditorial.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/10/17161819/quiet-place-2-274x310-1.jpg');"></div> 
+        <div class="panel-rt bannerCaption subPanel"> 
+         <h3 class="panel-heading">Best of 2021</h3> 
+         <div class="panel-body"> 
+          <p class="title">The year's Freshest flicks</p> 
+         </div> 
+        </div> </a> 
+      </div> 
+      <div id="spotlight_ad" style="height:0px"> 
+       <script>
+          var mps=mps||{}; mps._queue=mps._queue||{}; mps._queue.gptloaded=mps._queue.gptloaded||[];
+          mps._queue.gptloaded.push(function() {
+            mps.insertAd('#spotlight_ad','spotlight');
+          });
+        </script> 
+      </div> 
+      <div class="col col-left-center col-full-xs"> 
+       <div class="panel panel-rt panel-box article_body"> 
+        <h2 class="panel-heading">More Scare Central</h2> 
+        <div class="panel-body"> 
+         <div id="wpv-view-layout-9641-TCPID59640" class="js-wpv-view-layout js-wpv-layout-responsive js-wpv-view-layout-9641-TCPID59640" data-viewnumber="9641-TCPID59640" data-pagination="{&quot;id&quot;:&quot;9641&quot;,&quot;query&quot;:&quot;normal&quot;,&quot;type&quot;:&quot;paged&quot;,&quot;effect&quot;:&quot;fade&quot;,&quot;duration&quot;:500,&quot;speed&quot;:5,&quot;pause_on_hover&quot;:&quot;disabled&quot;,&quot;stop_rollover&quot;:&quot;false&quot;,&quot;cache_pages&quot;:&quot;enabled&quot;,&quot;preload_images&quot;:&quot;enabled&quot;,&quot;preload_pages&quot;:&quot;enabled&quot;,&quot;preload_reach&quot;:&quot;1&quot;,&quot;spinner&quot;:&quot;builtin&quot;,&quot;spinner_image&quot;:&quot;https://editorial.rottentomatoes.com/wp-content/plugins/toolset-blocks/embedded/res/img/ajax-loader.gif&quot;,&quot;callback_next&quot;:&quot;&quot;,&quot;manage_history&quot;:&quot;enabled&quot;,&quot;has_controls_in_form&quot;:&quot;enabled&quot;,&quot;infinite_tolerance&quot;:&quot;0&quot;,&quot;max_pages&quot;:12,&quot;page&quot;:1,&quot;base_permalink&quot;:&quot;/rt-hub/scare-central/?wpv_view_count=9641-TCPID59640&amp;wpv_paged=WPV_PAGE_NUM&quot;,&quot;loop&quot;:{&quot;type&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;data&quot;:[],&quot;id&quot;:0}}" data-permalink="/rt-hub/scare-central/?wpv_view_count=9641-TCPID59640"> 
+          <div class="row "> 
+           <div class="col-sm-8 newsItem col-full-xs"> <a class="unstyled articleLink" href="https://editorial.rottentomatoes.com/guide/best-horror-movies-of-2021-ranked/" target=""> 
+             <div class="editorialColumnPic"> 
+              <img src="https://prd-rteditorial.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/10/14110116/600Fearstreet3.jpg" class="attachment-full wp-post-image" alt="rteditorial_default"> 
+             </div> 
+             <div class="panel bannerCaption"> 
+              <div class="panel-body"> 
+               <p class="noSpacing title"> Best Horror Movies of 2021, Ranked – New Scary Movies to Watch</p> 
+               <p class="noSpacing publication-date">December 28, 2021</p> 
+              </div> 
+             </div> </a> 
+           </div> 
+           <div class="col-sm-8 newsItem col-full-xs"> <a class="unstyled articleLink" href="https://editorial.rottentomatoes.com/article/ultimate-horror-movie-showdown/" target=""> 
+             <div class="editorialColumnPic"> 
+              <img src="https://prd-rteditorial.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/10/29095610/Ultimate_Horror_Movie_Showdown_Winner-Rep.jpg" class="attachment-full wp-post-image" alt="rteditorial_default"> 
+             </div> 
+             <div class="panel bannerCaption"> 
+              <div class="panel-body"> 
+               <p class="noSpacing title"> RT Fans Crown <em>Halloween</em> the Ultimate Horror Movie</p> 
+               <p class="noSpacing publication-date">October 29, 2021</p> 
+              </div> 
+             </div> </a> 
+           </div> 
+           <div class="col-sm-8 newsItem col-full-xs"> <a class="unstyled articleLink" href="https://editorial.rottentomatoes.com/article/10-horror-festival-hits-you-need-to-watch/" target=""> 
+             <div class="editorialColumnPic"> 
+              <img src="https://prd-rteditorial.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/10/25162452/Festival_Horror-Titane-Rep.jpg" class="attachment-full wp-post-image" alt="rteditorial_default"> 
+             </div> 
+             <div class="panel bannerCaption"> 
+              <div class="panel-body"> 
+               <p class="noSpacing title"> 10 Horror Festival Hits You Need to Watch</p> 
+               <p class="noSpacing publication-date">October 25, 2021</p> 
+              </div> 
+             </div> </a> 
+           </div> 
+          </div> 
+          <div class="row "> 
+           <div class="col-sm-8 newsItem col-full-xs"> <a class="unstyled articleLink" href="https://editorial.rottentomatoes.com/guide/best-horror-movies-directed-by-women/" target=""> 
+             <div class="editorialColumnPic"> 
+              <img src="https://prd-rteditorial.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/10/14110116/600Fearstreet3.jpg" class="attachment-full wp-post-image" alt="rteditorial_default"> 
+             </div> 
+             <div class="panel bannerCaption"> 
+              <div class="panel-body"> 
+               <p class="noSpacing title"> Best Horror Movies Directed by Women</p> 
+               <p class="noSpacing publication-date">October 14, 2021</p> 
+              </div> 
+             </div> </a> 
+           </div> 
+           <div class="col-sm-8 newsItem col-full-xs"> <a class="unstyled articleLink" href="https://editorial.rottentomatoes.com/guide/every-halloween-series-movie-ranked/" target=""> 
+             <div class="editorialColumnPic"> 
+              <img src="https://prd-rteditorial.s3.us-west-2.amazonaws.com/wp-content/uploads/2018/10/22155749/6.jpg" class="attachment-full wp-post-image" alt="rteditorial_default"> 
+             </div> 
+             <div class="panel bannerCaption"> 
+              <div class="panel-body"> 
+               <p class="noSpacing title"> Every <em>Halloween</em> Series Movie Ranked</p> 
+               <p class="noSpacing publication-date">October 14, 2021</p> 
+              </div> 
+             </div> </a> 
+           </div> 
+           <div class="col-sm-8 newsItem col-full-xs"> <a class="unstyled articleLink" href="https://editorial.rottentomatoes.com/article/instagram-live-event-anthony-michael-hall-on-halloween-kills/" target=""> 
+             <div class="editorialColumnPic"> 
+              <img src="https://prd-rteditorial.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/10/13131423/RT_LIVE_HalloweenKills_AnthonyMichaelHall-600x314.jpg" class="attachment-full wp-post-image" alt="rteditorial_default"> 
+             </div> 
+             <div class="panel bannerCaption"> 
+              <div class="panel-body"> 
+               <p class="noSpacing title"> Instagram Live Event: Anthony Michael Hall on <em>Halloween Kills</em></p> 
+               <p class="noSpacing publication-date">October 14, 2021</p> 
+              </div> 
+             </div> </a> 
+           </div> 
+          </div> 
+          <div class="row "> 
+           <div class="col-sm-8 newsItem col-full-xs"> <a class="unstyled articleLink" href="https://editorial.rottentomatoes.com/guide/best-1960s-horror-movies/" target=""> 
+             <div class="editorialColumnPic"> 
+              <img src="https://prd-rteditorial.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/10/08121510/600Horror60s.jpg" class="attachment-full wp-post-image" alt="rteditorial_default"> 
+             </div> 
+             <div class="panel bannerCaption"> 
+              <div class="panel-body"> 
+               <p class="noSpacing title"> The 55 Best 1960s Horror Movies</p> 
+               <p class="noSpacing publication-date">October 8, 2021</p> 
+              </div> 
+             </div> </a> 
+           </div> 
+           <div class="col-sm-8 newsItem col-full-xs"> <a class="unstyled articleLink" href="https://editorial.rottentomatoes.com/guide/best-netflix-horror-movies-to-watch-right-now/" target=""> 
+             <div class="editorialColumnPic"> 
+              <img src="https://prd-rteditorial.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/12/02104233/600FearStreet.jpg" class="attachment-full wp-post-image" alt="rteditorial_default"> 
+             </div> 
+             <div class="panel bannerCaption"> 
+              <div class="panel-body"> 
+               <p class="noSpacing title"> Best Horror Movies on Netflix: The Scariest Movies To Stream Now (December 2021)</p> 
+               <p class="noSpacing publication-date">October 1, 2021</p> 
+              </div> 
+             </div> </a> 
+           </div> 
+           <div class="col-sm-8 newsItem col-full-xs"> <a class="unstyled articleLink" href="https://editorial.rottentomatoes.com/article/scariest-horror-movie-scenes-of-all-time/" target=""> 
+             <div class="editorialColumnPic"> 
+              <img src="https://prd-rteditorial.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/10/01104431/Babadook.jpg" class="attachment-full wp-post-image" alt="rteditorial_default"> 
+             </div> 
+             <div class="panel bannerCaption"> 
+              <div class="panel-body"> 
+               <p class="noSpacing title"> The 29 Scariest Horror Movie Scenes of All Time</p> 
+               <p class="noSpacing publication-date">October 1, 2021</p> 
+              </div> 
+             </div> </a> 
+           </div> 
+          </div> 
+          <div class="row "> 
+           <div class="col-sm-8 newsItem col-full-xs"> <a class="unstyled articleLink" href="https://editorial.rottentomatoes.com/guide/best-horror-movies-of-all-time/" target=""> 
+             <div class="editorialColumnPic"> 
+              <img src="https://prd-rteditorial.s3.us-west-2.amazonaws.com/wp-content/uploads/2018/10/18164803/600Horror1.jpg" class="attachment-full wp-post-image" alt="rteditorial_default"> 
+             </div> 
+             <div class="panel bannerCaption"> 
+              <div class="panel-body"> 
+               <p class="noSpacing title"> 200 Best Horror Movies of All Time</p> 
+               <p class="noSpacing publication-date">October 1, 2021</p> 
+              </div> 
+             </div> </a> 
+           </div> 
+           <div class="col-sm-8 newsItem col-full-xs"> <a class="unstyled articleLink" href="https://editorial.rottentomatoes.com/guide/best-1950s-horror-movies/" target=""> 
+             <div class="editorialColumnPic"> 
+              <img src="https://prd-rteditorial.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/30125910/600Horror50s.jpg" class="attachment-full wp-post-image" alt="rteditorial_default"> 
+             </div> 
+             <div class="panel bannerCaption"> 
+              <div class="panel-body"> 
+               <p class="noSpacing title"> The 35 Best 1950s Horror Movies</p> 
+               <p class="noSpacing publication-date">September 30, 2021</p> 
+              </div> 
+             </div> </a> 
+           </div> 
+           <div class="col-sm-8 newsItem col-full-xs"> <a class="unstyled articleLink" href="https://editorial.rottentomatoes.com/guide/best-2000s-horror-movies/" target=""> 
+             <div class="editorialColumnPic"> 
+              <img src="https://prd-rteditorial.s3.us-west-2.amazonaws.com/wp-content/uploads/2018/10/26084258/2000shor1.jpg" class="attachment-full wp-post-image" alt="rteditorial_default"> 
+             </div> 
+             <div class="panel bannerCaption"> 
+              <div class="panel-body"> 
+               <p class="noSpacing title"> The 80 Best 2000s Horror Movies</p> 
+               <p class="noSpacing publication-date">September 30, 2021</p> 
+              </div> 
+             </div> </a> 
+           </div> 
+          </div> 
+          <div class="row "> 
+           <div class="col-sm-8 newsItem col-full-xs"> <a class="unstyled articleLink" href="https://editorial.rottentomatoes.com/guide/best-80s-horror-movies/" target=""> 
+             <div class="editorialColumnPic"> 
+              <img src="https://prd-rteditorial.s3.us-west-2.amazonaws.com/wp-content/uploads/2018/10/11132446/80sh.jpg" class="attachment-full wp-post-image" alt="rteditorial_default"> 
+             </div> 
+             <div class="panel bannerCaption"> 
+              <div class="panel-body"> 
+               <p class="noSpacing title"> The 80 Best Horror Movies of the 1980s</p> 
+               <p class="noSpacing publication-date">September 30, 2021</p> 
+              </div> 
+             </div> </a> 
+           </div> 
+           <div class="col-sm-8 newsItem col-full-xs"> <a class="unstyled articleLink" href="https://editorial.rottentomatoes.com/guide/best-1970s-horror-movies/" target=""> 
+             <div class="editorialColumnPic"> 
+              <img src="https://prd-rteditorial.s3.us-west-2.amazonaws.com/wp-content/uploads/2018/10/04122306/70s.jpg" class="attachment-full wp-post-image" alt="rteditorial_default"> 
+             </div> 
+             <div class="panel bannerCaption"> 
+              <div class="panel-body"> 
+               <p class="noSpacing title"> The 95 Best Horror Movies of the 1970s</p> 
+               <p class="noSpacing publication-date">September 30, 2021</p> 
+              </div> 
+             </div> </a> 
+           </div> 
+           <div class="col-sm-8 newsItem col-full-xs"> <a class="unstyled articleLink" href="https://editorial.rottentomatoes.com/guide/best-2010s-horror-movies/" target=""> 
+             <div class="editorialColumnPic"> 
+              <img src="https://prd-rteditorial.s3.us-west-2.amazonaws.com/wp-content/uploads/2019/09/30173111/600Horror2010.jpg" class="attachment-full wp-post-image" alt="rteditorial_default"> 
+             </div> 
+             <div class="panel bannerCaption"> 
+              <div class="panel-body"> 
+               <p class="noSpacing title"> The 100 Best 2010s Horror Movies</p> 
+               <p class="noSpacing publication-date">September 30, 2021</p> 
+              </div> 
+             </div> </a> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+       <div> 
+        <form autocomplete="off" name="wpv-filter-9641-TCPID59640" action="/rt-hub/scare-central/?wpv_view_count=9641-TCPID59640" method="get" class="wpv-filter-form js-wpv-filter-form js-wpv-filter-form-9641-TCPID59640 js-wpv-form-full" data-viewnumber="9641-TCPID59640" data-viewid="9641" data-viewhash="eyJuYW1lIjoiSHViIn0=" data-viewwidgetid="0" data-orderby="" data-order="" data-orderbyas="" data-orderbysecond="" data-ordersecond="" data-parametric="{&quot;query&quot;:&quot;normal&quot;,&quot;id&quot;:&quot;9641&quot;,&quot;view_id&quot;:&quot;9641&quot;,&quot;widget_id&quot;:0,&quot;view_hash&quot;:&quot;9641-TCPID59640&quot;,&quot;action&quot;:&quot;\/rt-hub\/scare-central\/?wpv_view_count=9641-TCPID59640&quot;,&quot;sort&quot;:{&quot;orderby&quot;:&quot;&quot;,&quot;order&quot;:&quot;&quot;,&quot;orderby_as&quot;:&quot;&quot;,&quot;orderby_second&quot;:&quot;&quot;,&quot;order_second&quot;:&quot;&quot;},&quot;orderby&quot;:&quot;&quot;,&quot;order&quot;:&quot;&quot;,&quot;orderby_as&quot;:&quot;&quot;,&quot;orderby_second&quot;:&quot;&quot;,&quot;order_second&quot;:&quot;&quot;,&quot;ajax_form&quot;:&quot;&quot;,&quot;ajax_results&quot;:&quot;&quot;,&quot;effect&quot;:&quot;fade&quot;,&quot;prebefore&quot;:&quot;&quot;,&quot;before&quot;:&quot;&quot;,&quot;after&quot;:&quot;&quot;,&quot;attributes&quot;:[],&quot;environment&quot;:{&quot;current_post_id&quot;:59640,&quot;parent_post_id&quot;:59640,&quot;parent_term_id&quot;:0,&quot;parent_user_id&quot;:0,&quot;archive&quot;:{&quot;type&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;data&quot;:[]}},&quot;loop&quot;:{&quot;type&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;data&quot;:[],&quot;id&quot;:0}}" data-attributes="[]" data-environment="{&quot;current_post_id&quot;:59640,&quot;parent_post_id&quot;:59640,&quot;parent_term_id&quot;:0,&quot;parent_user_id&quot;:0,&quot;archive&quot;:{&quot;type&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;data&quot;:[]}}"> 
+         <input type="hidden" class="js-wpv-dps-filter-data js-wpv-filter-data-for-this-form" data-action="/rt-hub/scare-central/?wpv_view_count=9641-TCPID59640" data-page="1" data-ajax="disable" data-effect="fade" data-maxpages="12" data-ajaxprebefore="" data-ajaxbefore="" data-ajaxafter=""> 
+         <input class="wpv_view_count wpv_view_count-9641-TCPID59640" type="hidden" name="wpv_view_count" value="9641-TCPID59640"> 
+         <div style="text-align: center; padding: 10px;"> <span class="pull-left"></span> <span style="width: 100%;">Showing page: <select class="wpv-page-selector-9641-TCPID59640 js-wpv-page-selector" data-viewnumber="9641-TCPID59640"> <option value="1" selected>1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option> <option value="6">6</option> <option value="7">7</option> <option value="8">8</option> <option value="9">9</option> <option value="10">10</option> <option value="11">11</option> <option value="12">12</option> </select> of 12 </span> <span class="pull-right"><a class="wpv-filter-next-link js-wpv-pagination-next-link page-link " href="/rt-hub/scare-central/?wpv_view_count=9641-TCPID59640&amp;wpv_paged=2" data-viewnumber="9641-TCPID59640" data-page="2">Next</a></span> 
+         </div> 
+        </form> 
+       </div> 
+      </div> 
+      <div class="col col-right col-full-xs"> 
+       <div style="padding-bottom:5px;"> 
+        <div id="medrec_top_ad" class="medrec_ad center"></div> 
+        <script>
+            var mps=mps||{}; mps._queue=mps._queue||{}; mps._queue.gptloaded=mps._queue.gptloaded||[];
+            mps._queue.gptloaded.push(function() {
+                if (mps.getResponsiveSet() =='0') { //MOBILE
+                   mps.insertAd('#medrec_top_ad','mboxadone');
+                } else { //Desktop and Tablet
+                    mps.insertAd('#medrec_top_ad','topmulti');
+                }
+            });  
+        </script> 
+        <div class="sidebar-news" style="padding-top: 10px;"> <a class="twitter-timeline" href="https://twitter.com/RottenTomatoes" data-widget-id="608140158207062016">Tweets by @RottenTomatoes</a> 
+         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
+        </div> 
+        <div id="medrec_bottom_ad" class="medrec_ad center"></div> 
+        <script>
+            var mps=mps||{}; mps._queue=mps._queue||{}; mps._queue.gptloaded=mps._queue.gptloaded||[];
+            mps._queue.gptloaded.push(function() {
+                if (mps.getResponsiveSet() =='0') { //MOBILE
+                   mps.insertAd('#medrec_bottom_ad','mboxadtwo');
+                } else { //Desktop and Tablet
+                    mps.insertAd('#medrec_bottom_ad','boxadone');
+                }
+            });
+        </script> 
+       </div> 
+      </div> 
+     </div> <!-- end content container --> 
+     <div class="sleaderboard_wrapper hidden-xs"> 
+      <div id="leaderboard_bottom_ad" style="display:block"></div> 
+      <script>
+      var mps=mps||{}; mps._queue=mps._queue||{}; mps._queue.gptloaded=mps._queue.gptloaded||[];
+      mps._queue.gptloaded.push(function() {
+          if (mps.getResponsiveSet() !='0') { //DESKTOP or TABLET
+              mps.insertAd('#leaderboard_bottom_ad','bottombanner');
+          }
+      });
+    </script> 
+     </div> 
+     <style>#skin_ad { height:0px !important; }</style> 
+     <div id="skin_ad"></div> 
+     <div id="interstitial_ad" style="height:0px;"></div> 
+     <div id="pixel_ad" style="display:none;"></div> 
+     <script>
+  var mps=mps||{}; mps._queue=mps._queue||{}; mps._queue.gptloaded=mps._queue.gptloaded||[];
+  mps._queue.gptloaded.push(function() {
+    mps.insertAd('#pixel_ad','pixel');
+  });
+</script> 
+     <div id="foot" class="hidden-xs"> 
+      <div class="row"> 
+       <div class="col-xs-5 subnav"> 
+        <ul class="unstyled"> 
+         <li><a id="footer-help" class="unstyled trendingLink" href="https://www.rottentomatoes.com/help_desk/">Help</a></li> 
+         <li><a id="footer-about" class="unstyled trendingLink" href="https://www.rottentomatoes.com/about/">About Rotten Tomatoes</a></li> 
+         <li><a id="footer-tomatometer" class="unstyled trendingLink" href="https://www.rottentomatoes.com/about/">What's the Tomatometer?®</a></li> 
+         <li><a id="footer-jobs" class="unstyled trendingLink" href="https://www.flixster.com/careers">Jobs</a></li> 
+         <li><a id="footer-advertise" class="unstyled trendingLink" href="https://www.fandango.com/Advertising.aspx">Advertise</a></li> 
+        </ul> 
+       </div> 
+       <div class="col-xs-4 subnav"> 
+        <ul> 
+         <li><a id="footer-critics" class="unstyled trendingLink" href="https://www.rottentomatoes.com/help_desk/critics/">Critic Submission</a></li> 
+         <li><a id="footer-api" class="unstyled trendingLink" href="https://developer.rottentomatoes.com">API</a></li> 
+         <li><a id="footer-licensing" class="unstyled trendingLink" href="https://www.rottentomatoes.com/help_desk/licensing/">Licensing</a></li> 
+        </ul> 
+       </div> 
+       <div class="col-xs-7 subnav"> <!--            <h2><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;JOIN THE NEWSLETTER</h2>--> <!--            <div style="margin:10px 0">--> <!--                Get the freshest reviews, news, and more delivered right to your inbox!--> <!--            </div>--> <!--            <form id="newsletterSignup" action="--><!--/promo/newsletter-signup-confirm" method="POST" target="_blank">--> <!--                <div class="input-group">--> <!--                    <input name="email" type="text" class="form-control" placeholder="Enter your email address">--> <!--                    <span class="input-group-btn">--> <!--                        <button id="footer-newsletter-join" type="submit" class="btn btn-primary-rt">Join</button>--> <!--                    </span>--> <!--                </div>--> <!--            </form>--> 
+       </div> 
+       <div class="col-xs-8 subnav"> 
+        <h2>Follow Us</h2> 
+        <div> <a id="footer-follow-us-twitter" class="unstyled trendingLink fontelloIcon icon-twitter footerIcon" href="https://twitter.com/rottentomatoes"></a>&nbsp;&nbsp;&nbsp; <a id="footer-follow-us-facebook" class="unstyled trendingLink fontelloIcon icon-facebook-squared footerIcon" href="https://www.facebook.com/rottentomatoes"></a>&nbsp;&nbsp;&nbsp; <a id="footer-follow-us-google" class="unstyled trendingLink fontelloIcon icon-gplus footerIcon" href="https://plus.google.com/+RottenTomatoes"></a>&nbsp;&nbsp;&nbsp; <a id="footer-follow-us-youtube" class="unstyled trendingLink fontelloIcon icon-youtube-play footerIcon" href="https://www.youtube.com/user/rottentomatoes"></a>&nbsp;&nbsp;&nbsp; <a id="footer-follow-us-tumblr" class="unstyled trendingLink fontelloIcon icon-tumblr footerIcon" href="https://rottentomatoes.tumblr.com/"></a>&nbsp;&nbsp;&nbsp; 
+        </div> 
+       </div> 
+      </div> 
+      <div class="subtle" style="padding:10px"> <span class="easteregg">Copyright © 2018 Fandango. All rights reserved.</span> <a id="footer-privacy" href="http://www.fandango.com/PrivacyPolicy">Privacy Policy</a> | <a id="footer-tos" href="http://www.fandango.com/terms-and-policies/">Terms and Policies</a> | <a id="footer-ad-choices" href="http://www.aboutads.info/choices">Ad Choices</a> 
+      </div> 
+     </div> 
+     <div id="mobileFoot" class="visible-xs-block"> 
+      <div id="footer_text"> 
+       <div class="white">
+         Copyright&nbsp;©&nbsp; 2018 Fandango. All rights reserved. 
+       </div> 
+       <div> <a class="footerLinks" href="http://www.fandango.com/terms">Terms of Service</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a class="footerLinks" href="http://www.fandango.com/privacy">Privacy Policy</a> 
+       </div> 
+      </div> 
+     </div> 
+     <script type="text/javascript">
+const wpvViewHead = document.getElementsByTagName( "head" )[ 0 ];
+const wpvViewExtraCss = document.createElement( "style" );
+wpvViewExtraCss.textContent = '<!--[if IE 7]><style>.wpv-pagination { *zoom: 1; }</style><![endif]-->';
+wpvViewHead.appendChild( wpvViewExtraCss );
+</script> 
+     <script type="text/javascript" src="https://editorial.rottentomatoes.com/wp-content/themes/RottenTomatoes/js/bootstrap.js?ver=1.1" id="theme-js-js"></script> 
+     <script type="text/javascript" src="https://editorial.rottentomatoes.com/wp-content/plugins/page-links-to/dist/new-tab.js?ver=3.3.5" id="page-links-to-js"></script> 
+     <script type="text/javascript" src="https://editorial.rottentomatoes.com/wp-includes/js/wp-embed.min.js?ver=5.8.1" id="wp-embed-js"></script> 
+     <script type="text/javascript" src="https://editorial.rottentomatoes.com/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1" id="jquery-ui-core-js"></script> 
+     <script type="text/javascript" src="https://editorial.rottentomatoes.com/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.12.1" id="jquery-ui-datepicker-js"></script> 
+     <script type="text/javascript" src="https://editorial.rottentomatoes.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.12.1" id="jquery-ui-mouse-js"></script> 
+     <script type="text/javascript" src="https://editorial.rottentomatoes.com/wp-includes/js/jquery/ui/slider.min.js?ver=1.12.1" id="jquery-ui-slider-js"></script> 
+     <script type="text/javascript" src="https://editorial.rottentomatoes.com/wp-includes/js/jquery/jquery.ui.touch-punch.js?ver=0.2.2" id="jquery-touch-punch-js"></script> 
+     <script type="text/javascript" id="mediaelement-core-js-before">
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script> 
+     <script type="text/javascript" src="https://editorial.rottentomatoes.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.16" id="mediaelement-core-js"></script> 
+     <script type="text/javascript" src="https://editorial.rottentomatoes.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.8.1" id="mediaelement-migrate-js"></script> 
+     <script type="text/javascript" id="mediaelement-js-extra">
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script> 
+     <script type="text/javascript" src="https://editorial.rottentomatoes.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=5.8.1" id="wp-mediaelement-js"></script> 
+     <script type="text/javascript" src="https://editorial.rottentomatoes.com/wp-includes/js/underscore.min.js?ver=1.13.1" id="underscore-js"></script> 
+     <script type="text/javascript" id="wp-util-js-extra">
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script> 
+     <script type="text/javascript" src="https://editorial.rottentomatoes.com/wp-includes/js/wp-util.min.js?ver=5.8.1" id="wp-util-js"></script> 
+     <script type="text/javascript" src="https://editorial.rottentomatoes.com/wp-includes/js/backbone.min.js?ver=1.4.0" id="backbone-js"></script> 
+     <script type="text/javascript" src="https://editorial.rottentomatoes.com/wp-includes/js/mediaelement/wp-playlist.min.js?ver=5.8.1" id="wp-playlist-js"></script> 
+     <script type="text/javascript" id="views-blocks-frontend-js-extra">
+/* <![CDATA[ */
+var wpv_pagination_local = {"front_ajaxurl":"https:\/\/editorial.rottentomatoes.com\/wp-admin\/admin-ajax.php","calendar_image":"https:\/\/editorial.rottentomatoes.com\/wp-content\/plugins\/toolset-blocks\/embedded\/res\/img\/calendar.gif","calendar_text":"Select date","datepicker_min_date":null,"datepicker_max_date":null,"datepicker_min_year":"1582","datepicker_max_year":"3000","resize_debounce_tolerance":"100","datepicker_style_url":"https:\/\/editorial.rottentomatoes.com\/wp-content\/plugins\/types\/vendor\/toolset\/toolset-common\/toolset-forms\/css\/wpt-jquery-ui\/jquery-ui-1.11.4.custom.css","wpmlLang":""};
+/* ]]> */
+</script> 
+     <script type="text/javascript" src="https://editorial.rottentomatoes.com/wp-content/plugins/toolset-blocks/public/js/views-frontend.js?ver=3.6.1" id="views-blocks-frontend-js"></script> <!-- BEGIN: wpflow ga events array --> 
+     <script>
+
+                jQuery(document).ready(function() {
+                    if(typeof scroll_events == 'undefined') {
+                        return;
+                    }
+                    scroll_events.bind_events( {
+                        universal: 1,
+                        gtm:0,
+                        gst:0,
+
+                        scroll_elements: [],
+                        click_elements: [{'select':'.ga_imdb','category':'Outbound Editorial Click','action':'click','label':'IMDb Outbound','bounce':'false','evalue':''},{'select':'.ga_boxofficemojo','category':'Outbound Editorial Click','action':'click','label':'Box Office Mojo Outbound','bounce':'false','evalue':''},{'select':'.ga_collider','category':'Outbound Editorial Click','action':'click','label':'Collider Outbound','bounce':'false','evalue':''},{'select':'.ga_deadline','category':'Outbound Editorial Click','action':'click','label':'Deadline Outbound','bounce':'false','evalue':''},{'select':'.ga_hollywoodreporter','category':'Outbound Editorial Click','action':'click','label':'Hollywood Reporter Outbound','bounce':'false','evalue':''},{'select':'.ga_variety','category':'Outbound Editorial Click','action':'click','label':'Variety Outbound','bounce':'false','evalue':''},{'select':'.ga_thewrap','category':'Outbound Editorial Click','action':'click','label':'The Wrap Outbound','bounce':'false','evalue':''},{'select':'.ga_wikipedia','category':'Outbound Editorial Click','action':'click','label':'Wikipedia Outbound','bounce':'false','evalue':''},{'select':'.ga_amazon','category':'Outbound Editorial Click','action':'click','label':'Amazon Outbound','bounce':'false','evalue':''},{'select':'.ga_fandangonow','category':'Outbound Editorial Click','action':'click','label':'FandangoNOW Outbound','bounce':'false','evalue':''},{'select':'.ga_google','category':'Outbound Editorial Click','action':'click','label':'Google Outbound','bounce':'false','evalue':''},{'select':'.ga_apple','category':'Outbound Editorial Click','action':'click','label':'Apple Outbound','bounce':'false','evalue':''},{'select':'.ga_microsoft','category':'Outbound Editorial Click','action':'click','label':'Microsoft Outbound','bounce':'false','evalue':''},{'select':'.ga_netflix','category':'Outbound Editorial Click','action':'click','label':'Netflix Outbound','bounce':'false','evalue':''},{'select':'.ga_playstation','category':'Outbound Editorial Click','action':'click','label':'Playstation Outbound','bounce':'false','evalue':''},{'select':'.ga_vudu','category':'Outbound Editorial Click','action':'click','label':'Vudu Outbound','bounce':'false','evalue':''},{'select':'.ga_marvel','category':'Outbound Editorial Click','action':'click','label':'Marvel Outbound','bounce':'false','evalue':''},{'select':'.ga_dccomics','category':'Outbound Editorial Click','action':'click','label':'DC Comics Outbound','bounce':'false','evalue':''}],
+                    });
+                });
+
+    </script> <!-- END: wpflow ga events array --> 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.14/require.js" data-main="https://editorial.rottentomatoes.com/wp-content/themes/RottenTomatoes/js/rtmain.js"></script> 
+     <script>
+    function endsWith(str, suffix) {
+      return str.indexOf(suffix, str.length - suffix.length) !== -1;
+    }
+
+    //--Ad Unit Loaded (called for each ad loaded)
+    var mps=mps||{}; mps._queue=mps._queue||{}; mps._queue.adload=mps._queue.adload||[];
+    mps._queue.adload.push(function(eo) {
+      window.console && console.log('**** AD LOADED: '+eo._mps.adslot);
+      if (!eo.isEmpty) {
+          console.log('MPS Slot Rendered: ' + eo.slot.getAdUnitPath() + " - " + eo.size + ' Creative Id: ' + eo.creativeId + ' Line Item Id: ' + eo.lineItemId);
+          if (eo._mps._slot == "topbanner") {
+              var leaderboardHeight = eo.size[1];
+              if (leaderboardHeight > 50){
+                   jQuery("#top_leaderboard_wrapper").animate({height:(leaderboardHeight+10)},1000);
+                    if (jQuery("#imageViewerModal").length > 0) {
+                      jQuery(".modalDialog").css("top", leaderboardHeight+10);
+                    }
+              }
+          }
+
+          if (eo._mps._slot == "trendinggraphic") {
+            //Hide Trending bar social section
+            jQuery("#trending_bar_social").hide();
+            //Removing padding for trending bar ad
+            jQuery(".trendingBar>.trendingEl").css("padding","0px");
+            jQuery("#trending_bar_ad").show();
+          }
+      }
+    });
+    
+    var mps=mps||{}; mps._queue=mps._queue||{}; mps._queue.gptloaded=mps._queue.gptloaded||[];
+    mps._queue.gptloaded.push(function() {
+      mps._setPageTargeting('hub',"59640");
+      mps._setPageTargeting('url',"/rt-hub/scare-central/");
+      mps._setPageTargeting('franchiseid',"");
+    });
+</script> 
+     <script type="text/javascript">
+  var _sf_async_config = _sf_async_config || {};
+  /** CONFIGURATION START **/
+  _sf_async_config.sections ="rt-hub";
+  _sf_async_config.authors = "rt-staff";
+  
+  /** CONFIGURATION END **/
+  (function() {
+      function loadChartbeat() {
+          window._sf_endpt = (new Date()).getTime();
+          var e = document.createElement('script');
+          e.setAttribute('language', 'javascript');
+          e.setAttribute('type', 'text/javascript');
+          
+          e.setAttribute('src', '//static.chartbeat.com/js/chartbeat_video.js');
+          document.body.appendChild(e);
+      }
+      var oldonload = window.onload;
+      window.onload = (typeof window.onload != 'function') ?
+          loadChartbeat : function() {
+              oldonload();
+              loadChartbeat();
+          };
+      
+      })();
+</script> 
+     <script>mps.writeFooter && mps.writeFooter();</script> 
+     <script type="text/javascript">_satellite.pageBottom();</script> 
+    </div> 
+   </div> 
+  </div><!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Database Caching 20/113 queries in 0.047 seconds using disk
+
+Served from: editorial.rottentomatoes.com @ 2022-05-17 12:02:52 by W3 Total Cache
+-->  
+ </body>
+</html>

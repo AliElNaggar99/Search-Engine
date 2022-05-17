@@ -4,19 +4,25 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+
+import java.io.File;
+import java.io.FileWriter;
 import java.net.URL;
 import java.net.MalformedURLException;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 import java.util.regex.PatternSyntaxException;
+import java.util.zip.CRC32;
 
 @SuppressWarnings("ALL")
 public class Scraper {
 
     public List<String> links = new LinkedList<String>();
     public Document htmlDocument;
+    long crcVal;
     private static final String USER_AGENT =
             "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/13.0.782.112 Safari/535.1";
     int counter = 0;
@@ -55,7 +61,27 @@ public class Scraper {
 
             //scraping part
             Document htmlDocument = Jsoup.connect(url).get();
+            Element body = htmlDocument.body();
+            CRC32 crc = new CRC32();
+            crc.update(body.toString().getBytes());
+            crcVal = crc.getValue();
+            if(DB.crcExists(crcVal))
+            {
+                System.out.println("Duplicate elements with different link, CRC ERROR");
+                return;
+            }
             this.htmlDocument = Jsoup.parse(htmlDocument.toString());
+            String fileName="htmldocs/"+crcVal+".txt";
+            ;
+            try {
+                FileWriter myWriter = new FileWriter(fileName);
+                myWriter.write(this.htmlDocument.toString());
+                myWriter.close();
+            } catch (IOException e) {
+                System.out.println("An error occurred writing the file.");
+                e.printStackTrace();
+            }
+
             for (Element metaTag : this.htmlDocument.getElementsByTag("meta")) {
                 if (metaTag.attr("name").toLowerCase().equals("keywords")) {
                     metaKeyWords = metaTag.attr("content").toLowerCase(); //get the metakeywords
@@ -67,13 +93,13 @@ public class Scraper {
             Elements hyperLinks = htmlDocument.select("a[href]"); //get the hrefs of the document
             for (Element link : hyperLinks) {
                 this.links.add(link.absUrl("href"));    //get the absolute url of the href
-                if(links.size()>30){
+                if(links.size()>50){
                     break;
                 }
             }
             DB.visitLink(url, importance); //add the url to visited links
             DB.insertLink(getLinks());     //add links found in href to the list
-            DB.insertHref(getLinks(), url); //add to the href collection in the database the links with the main url
+            DB.insertHref(getLinks(), url,crcVal,fileName); //add to the href collection in the database the links with the main url and update crc of visited site
         } catch (IOException ioe) {
             System.out.println("Error in the HTTP request " + ioe);
         } catch (PatternSyntaxException e) {
