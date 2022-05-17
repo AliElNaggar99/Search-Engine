@@ -7,6 +7,7 @@ import com.mongodb.client.model.Filters;
 import com.mongodb.client.model.Updates;
 import org.bson.Document;
 
+import javax.print.Doc;
 import java.net.UnknownHostException;
 import java.util.*;
 
@@ -74,9 +75,11 @@ public class Database {
         return linkedHashSet;
     }
 
-    public void insertHref(List<String> Link,String baseURL) {
-
-        Object objID = crawlerCollection.find(eq("URL", baseURL)).first().get("_id");
+    public void insertHref(List<String> Link,String baseURL,long crc,String filepath) {
+        Document doc = crawlerCollection.find(eq("URL", baseURL)).first();
+        crawlerCollection.updateOne(doc,
+                Updates.combine(Updates.set("crc", crc), Updates.set("filepath", filepath)));
+        Object objID = doc.get("_id");
         String ID = objID.toString();
         List<Document> crawlerEntry = new ArrayList<>();
         for(int i = 0 ;i<Link.size(); i++) {
@@ -95,7 +98,9 @@ public class Database {
                     .append("Visited", 0)
                     .append("indexed", 0)
                     .append("importance",0)
-                    .append("PageRank",(double)0.0));
+                    .append("PageRank",(double)0.0)
+                    .append("crc",(long)0)
+                    .append("filepath",""));
 
         }
         crawlerCollection.insertMany(crawlerEntry);
@@ -184,6 +189,13 @@ public class Database {
             String URL = (String) doc.get("URL");
             queue.add(URL);
         }
+    }
+
+    public boolean crcExists(long crc){
+        Object objID = crawlerCollection.find(eq("crc", crc)).first();
+        if (objID==null)
+            return false;
+        return true;
     }
 
 }
