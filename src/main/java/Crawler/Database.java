@@ -8,10 +8,7 @@ import com.mongodb.client.model.Updates;
 import org.bson.Document;
 
 import java.net.UnknownHostException;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 import static com.mongodb.client.model.Filters.eq;
 
@@ -61,6 +58,19 @@ public class Database {
             hrefCollection.insertOne(crawlerEntry);
         }
 
+    }
+
+    public Set<String> getHref(String baseURL){
+        Object objID = crawlerCollection.find(eq("URL", baseURL)).first().get("_id");
+        String ID = objID.toString();
+
+        MongoCursor<Document> cur2 = hrefCollection.find(eq("refTo", ID)).cursor();
+        Set<String> linkedHashSet = new LinkedHashSet<>();
+        while(cur2.hasNext())
+        {
+            linkedHashSet.add(cur2.next().get("URL").toString());
+        }
+        return linkedHashSet;
     }
 
     public void insertHref(List<String> Link,String baseURL) {
