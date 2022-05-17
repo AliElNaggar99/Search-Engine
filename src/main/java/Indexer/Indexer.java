@@ -74,6 +74,7 @@ public class Indexer {
         {
             headerMatrix.add(new ArrayList<String>());
             Elements headerElements = docBodyElements.select("h"+(i+1));
+            List <String> temp = headerElements.eachText();
             headerMatrix.set(i, headerElements.eachText());
         }
         //Now we will Select paragraphs and span and list items and dt -> term/name
@@ -83,6 +84,7 @@ public class Indexer {
         ParagraphListsWords.addAll(docBodyElements.select("li").eachText());
         ParagraphListsWords.addAll(docBodyElements.select("dt").eachText());
         System.out.println(titleWords);
+
     }
 
 
