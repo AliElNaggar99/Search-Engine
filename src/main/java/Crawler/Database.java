@@ -31,8 +31,9 @@ public class Database {
 //                .build();
 //        String uri = "mongodb://localhost:27017";
 //        MongoClient mongoClient = MongoClients.create(uri);
-
-        ConnectionString connectionString = new ConnectionString("mongodb+srv://sherno:asd123@cluster0.u308m.mongodb.net/?retryWrites=true&w=majority");
+        //For Local connecting to the database
+        ConnectionString connectionString = new ConnectionString("mongodb://localhost:27017");
+        //ConnectionString connectionString = new ConnectionString("mongodb+srv://sherno:asd123@cluster0.u308m.mongodb.net/?retryWrites=true&w=majority");
         MongoClientSettings settings = MongoClientSettings.builder()
                 .applyConnectionString(connectionString)
                 .serverApi(ServerApi.builder()
@@ -153,7 +154,7 @@ public class Database {
             Visited.add(URL);
         }
     }
-    void getVisited(List<String> queue){
+    public void getVisited(List<String> queue){
         MongoCursor<Document> cur =  crawlerCollection.find(new BasicDBObject("Visited", 1)).cursor();
         while(cur.hasNext()){
             Document doc = cur.next();
