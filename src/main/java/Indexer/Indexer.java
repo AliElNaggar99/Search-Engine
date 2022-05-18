@@ -8,16 +8,20 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.awt.*;
+import java.io.File;
 import java.io.IOException;
 import java.util.*;
 import java.util.List;
 
-public class Indexer {
-    //Databases that we use to access
-    Database crawlerDB;
+public class Indexer implements Runnable{
+    //Crawler Database
+    Database CrawlerDB;
+    //SearchIndexDBManager
     SearchIndexDBManager SearchIndexDB;
     //Url of the current Page
     String CurrentURL;
+    //Current Document
+    Document CurrentDoc;
     //Lists of Strings that are in the Page
     List<String> titleWords;
     //this matrix will contain each thing in a matrix where the row will represent the header it was found in
@@ -31,37 +35,36 @@ public class Indexer {
     String [] StopWords = {"a", "about", "above", "after", "again", "against", "all", "am", "an", "and", "any", "are", "as", "at", "be", "because", "been", "before", "being", "below", "between", "both", "but", "by", "could", "did", "do", "does", "doing", "down", "during", "each", "few", "for", "from", "further", "had", "has", "have", "having", "he", "he'd", "he'll", "he's", "her", "here", "here's", "hers", "herself", "him","himself", "his", "how", "how's", "i", "i'd", "i'll", "i'm", "i've", "if", "in", "into", "is", "it", "it's", "its", "itself", "let's", "me", "more", "most", "my", "myself", "nor", "of", "on", "once", "only", "or", "other", "ought", "our", "ours", "ourselves", "out", "over", "own", "same", "she", "she'd", "she'll", "she's", "should", "so", "some", "such", "than", "that", "that's", "the", "their", "theirs", "them", "themselves", "then", "there", "there's", "these", "they", "they'd", "they'll", "they're", "they've", "this", "those", "through", "to", "too", "under", "until", "up", "very", "was", "we", "we'd", "we'll", "we're", "we've", "were", "what", "what's", "when", "when's", "where", "where's", "which", "while", "who", "who's", "whom", "why", "why's", "with", "would", "you", "you'd", "you'll", "you're", "you've", "your", "yours", "yourself", "yourselves"};
     Set <String> StopWordsSet = new HashSet<String>(List.of(StopWords));
     int LengthOfDoc;
+    Boolean isSpam = false;
+    float SpamThreshold = 0.5F;
 
-    public Indexer(){
-
+    public Indexer(UrlData CurrentData , Database Crawler, SearchIndexDBManager SearchIndex) throws IOException {
+        CurrentURL = CurrentData.URL;
+        File input = new File(CurrentData.FilePath);
+        CurrentDoc = Jsoup.parse(input,"UTF-8");
+        CrawlerDB = Crawler;
+        SearchIndexDB = SearchIndex;
     }
 
-    public static void main(String[] args) throws IOException {
-        Database test = new Database();
-        SearchIndexDBManager Index = new SearchIndexDBManager();
-        List<String> toBeIndexed = new ArrayList<String>();
-        Indexer indexTest = new Indexer();
-        test.getVisited(toBeIndexed);
-        Document doc = Jsoup.connect(toBeIndexed.get(0)).get();
-        JSONObject word = Index.getKeyWord("hey");
-        //System.out.println(doc);
-        JSONObject newEntry = new JSONObject();
-        newEntry.put("isTitle" , "true");
-        newEntry.put("freq" , "123");
-        newEntry.put("isHeader" , "true");
-        newEntry.put("totalCountInUrl" , "100");
-        newEntry.put("header" , "h1");
-        newEntry.put("bold" , "143");
-        newEntry.put("url" , "www.asjsdad.com");
-        //Index.updateWordURLList("hey" , newEntry);
-        //Index.updateWordURLList("asdasdasdas",newEntry);
-        //indexTest.CurrentURL = toBeIndexed.get(0);
-        indexTest.ParseDocument(doc);
-        indexTest.AddWordsToHashMap();
-        //Index.insertDocumentMap(indexTest.DocumentMap);
+    public void run(){
+        index();
     }
 
-
+    void index(){
+        ParseDocument(this.CurrentDoc);
+        AddWordsToHashMap();
+        if(!isSpam)
+        {
+            synchronized(this.SearchIndexDB)
+            {
+                this.SearchIndexDB.insertDocumentMap(this.DocumentMap,this.CurrentURL);
+            }
+            synchronized (this.CrawlerDB)
+            {
+                this.CrawlerDB.updateIndex(this.CurrentURL);
+            }
+        }
+    }
 
     void AddWordsToHashMap(){
         AddTitleToHashMap();
@@ -89,6 +92,10 @@ public class Indexer {
             CurrentWordData.position.put("title" , CurrentWordData.position.get("title")+1);
             //Add it Back to the Map
             DocumentMap.put(Word,CurrentWordData);
+            if(CurrentWordData.count >= LengthOfDoc*SpamThreshold)
+            {
+                isSpam = true;
+            }
         }
     }
     void AddHeaderMatrixToHashMap() {
@@ -108,9 +115,13 @@ public class Indexer {
                 }
                 //Update the Count and Position
                 CurrentWordData.count += 1;
-                CurrentWordData.position.put("h"+i, CurrentWordData.position.get("h"+i) + 1);
+                CurrentWordData.position.put("h"+(i+1), CurrentWordData.position.get("h"+(i+1)) + 1);
                 //Add it Back to the Map
                 DocumentMap.put(Word, CurrentWordData);
+                if(CurrentWordData.count >= LengthOfDoc*SpamThreshold)
+                {
+                    isSpam = true;
+                }
             }
         }
     }
@@ -132,6 +143,10 @@ public class Indexer {
             CurrentWordData.position.put("body" , CurrentWordData.position.get("body")+1);
             //Add it Back to the Map
             DocumentMap.put(Word,CurrentWordData);
+            if(CurrentWordData.count >= LengthOfDoc*SpamThreshold)
+            {
+                isSpam = true;
+            }
         }
     }
 
@@ -205,4 +220,25 @@ public class Indexer {
             return null;
         }
     }
+
+    //For testing
+    public static void main(String[] args) throws IOException {
+        Database test = new Database();
+        SearchIndexDBManager Index = new SearchIndexDBManager();
+        List<String> toBeIndexed = new ArrayList<String>();
+        //Indexer indexTest = new Indexer();
+        test.getVisited(toBeIndexed);
+        Document doc = Jsoup.connect(toBeIndexed.get(0)).get();
+        JSONObject word = Index.getKeyWord("hey");
+        //System.out.println(doc);
+        JSONObject newEntry = new JSONObject();
+        newEntry.put("isTitle" , "true");
+        newEntry.put("freq" , "123");
+        newEntry.put("isHeader" , "true");
+        newEntry.put("totalCountInUrl" , "100");
+        newEntry.put("header" , "h1");
+        newEntry.put("bold" , "143");
+        newEntry.put("url" , "www.asjsdad.com");
+    }
+
 }

@@ -52,7 +52,9 @@ public class SearchIndexDBManager {
     }
 
     //this function will insert a hashMap to the DataBase
-    public void insertDocumentMap(Map<String,WordData> DocumentMap){
+    public void insertDocumentMap(Map<String,WordData> DocumentMap,String CurrentURL){
+        //First we need delete all data related to this index then add the need data
+        wordsCollection.deleteMany(new BasicDBObject("url",CurrentURL));
         List <Document> indexerEntry = new ArrayList<>();
         for(Map.Entry<String, WordData> entry: DocumentMap.entrySet())
         {
@@ -63,7 +65,6 @@ public class SearchIndexDBManager {
                             .append("position", entry.getValue().position));
         }
         wordsCollection.insertMany(indexerEntry);
-
     }
 
 
