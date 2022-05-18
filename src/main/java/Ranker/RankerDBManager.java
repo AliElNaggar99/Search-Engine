@@ -39,6 +39,7 @@ public class RankerDBManager {
     //this function will insert a hashMap to the DataBase
     public void insertUrlMap(Map<String, UrlData> urlMap){
         //First we need delete all data related to this index then add the need data
+        urlsCollection.deleteMany(new Document());
         List <Document> urlEntry = new ArrayList<>();
         for(Map.Entry<String, UrlData> entry: urlMap.entrySet())
         {

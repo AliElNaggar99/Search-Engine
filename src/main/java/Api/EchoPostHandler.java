@@ -1,5 +1,6 @@
 package Api;
 
+import Indexer.UrlData;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 
@@ -8,11 +9,15 @@ import java.net.URI;
 import java.net.URLDecoder;
 import java.util.*;
 import org.json.*;
+import Indexer.QueryProcessor;
+import org.jsoup.Jsoup;
+
+import org.jsoup.nodes.Document;
 
 
 public class EchoPostHandler implements HttpHandler {
     Database DB;
-
+    QueryProcessor QP;
     @Override
 
     public void handle(HttpExchange he) throws IOException {
@@ -23,19 +28,22 @@ public class EchoPostHandler implements HttpHandler {
         String query = br.readLine();
         parseQuery(query, parameters);
         DB = new Database();
+        QP = new QueryProcessor();
         // send response
-        Set<String> allURLs = DB.getAllURLs();
         String response = "";
         JSONArray ja = new JSONArray();
-
-        for (int i=0;i<5;i++)
+        LinkedHashMap <UrlData, Double> Results = QP.getResults(query);
+        for (Map.Entry<UrlData, Double> entry : Results.entrySet())
         {
             JSONObject jo = new JSONObject();
-            jo.put("url", "google.com");
-            jo.put("description", "bla bla bla");
-            jo.put("title", "chicago");
+            jo.put("url", entry.getKey().URL);
+            File input = new File(entry.getKey().FilePath);
+            Document CurrentDoc = Jsoup.parse(input,"UTF-8");
+            jo.put("title", CurrentDoc.title());
+            jo.put("description", QP.getDescription(CurrentDoc,query));
             ja.put(jo);
         }
+        System.out.println(ja);
         response = ja.toString();
         he.sendResponseHeaders(200, response.length());
         OutputStream os = he.getResponseBody();

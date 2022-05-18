@@ -1,5 +1,7 @@
 package Crawler;
 
+import Ranker.pageRanker;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.net.UnknownHostException;
@@ -140,6 +142,9 @@ public class Crawler implements Runnable {
         for (int i = 0; i < noOfCrawlers; i++) {
             threadList.get(i).join();           //join all threads
         }
+
+        ///Run PageRanker Algorithms
+        pageRanker ranker = new pageRanker(1000,0.85);
     }
 
 
