@@ -240,7 +240,7 @@ public class Database {
     }
 
     //To mark that we finished indexing
-    void updateIndex(String URL){
+    public void updateIndex(String URL){
         crawlerCollection.updateOne(Filters.eq("URL", URL), Updates.set("indexed", 1));
     }
 

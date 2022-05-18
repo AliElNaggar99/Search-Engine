@@ -13,17 +13,24 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+import static java.lang.Thread.currentThread;
 
 public class IndexerEngine {
     //Databases that we use to access
 
     public static void main(String[] args) throws IOException {
         Database CrawlerDB = new Database();
+        SearchIndexDBManager SearchIndexDB = new SearchIndexDBManager();
         List <UrlData> toBeIndexed = CrawlerDB.getAllURLsData();
-        File input = new File(toBeIndexed.get(0).FilePath);
-        Document doc = Jsoup.parse(input,"UTF-8");
-        System.out.println(doc);
-
+        ExecutorService executor = Executors.newFixedThreadPool(4);
+        for(int i = 0 ; i < toBeIndexed.size() ; i++)
+        {
+            executor.execute(new Indexer(toBeIndexed.get(i),CrawlerDB,SearchIndexDB));
+        }
+        executor.shutdown();
     }
 
 }
