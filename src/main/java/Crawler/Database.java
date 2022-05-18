@@ -199,13 +199,17 @@ public class Database {
         return true;
     }
 
-    public String getParentURL(String hrefedURL){
-        Document document = hrefCollection.find(eq("URL", hrefedURL)).first();
-        String objID= document.get("refTo").toString();
-        Document doc3 = crawlerCollection.find(eq("_id",new ObjectId(objID))).first();
-        if(doc3!=null)
-            return doc3.get("URL").toString();
-        return "";
+    public  Set<String> getParentURLs(String hrefedURL){
+        MongoCursor<Document> cur = hrefCollection.find(eq("URL", hrefedURL)).cursor();
+        Set<String> linkedHashSet = new LinkedHashSet<>();
+        while (cur.hasNext())
+        {
+            String objID= cur.next().get("refTo").toString();
+            Document doc3 = crawlerCollection.find(eq("_id",new ObjectId(objID))).first();
+            if(doc3!=null)
+                linkedHashSet.add(doc3.get("URL").toString());
+        }
+        return linkedHashSet;
     }
 
 }
