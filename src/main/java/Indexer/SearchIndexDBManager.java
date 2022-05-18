@@ -11,10 +11,7 @@ import org.bson.Document;
 import org.json.JSONObject;
 
 import java.net.UnknownHostException;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 import static com.mongodb.client.model.Filters.eq;
 
@@ -54,30 +51,21 @@ public class SearchIndexDBManager {
         return output;
     }
 
-    //this function takes a new URL (Doc object) and adds it to an existing word
-    /*public void updateWordURLList(String keyword,JSONObject URL){
-        //Find Query for the Update
-        Object findQuery = wordsCollection.find(eq("word", keyword)).first();
-        if (findQuery != null) {
+    //this function will insert a hashMap to the DataBase
+    public void insertDocumentMap(Map<String,WordData> DocumentMap){
+        List <Document> indexerEntry = new ArrayList<>();
+        for(Map.Entry<String, WordData> entry: DocumentMap.entrySet())
+        {
+            indexerEntry.add(new Document("word", entry.getKey())
+                            .append("url", entry.getValue().url)
+                            .append("count", entry.getValue().count)
+                            .append("lengthOfDocument", entry.getValue().lengthOfDoc)
+                            .append("position", entry.getValue().position));
         }
-        //Parse the object and add the right command for updating
-        DBObject url_DBObject = (DBObject) JSON.parse(URL.toString());
-        DBObject objQuery = new BasicDBObject("urls", url_DBObject);
-        DBObject updateQuery = new BasicDBObject("$push",objQuery );
-        wordsCollection.updateOne(findQuery, updateQuery);
-    }**/
+        wordsCollection.insertMany(indexerEntry);
 
-    //this function takes a new URL (Doc object) and adds it to a new Word
-    /*public void insertNewWord(String keyword,JSONObject URL){
-        DBObject url_DBObject = (DBObject) JSON.parse(URL.toString());
-        //Empty array to add to the DB since this word doesn't exist
-        List <DBObject> ArrayOfUrls = new ArrayList<>();
-        ArrayOfUrls.add(url_DBObject);
-        BasicDBObject wordEntry = new BasicDBObject("word", keyword)
-                .append("urls",ArrayOfUrls);
+    }
 
-        wordsCollection.insertOne(wordEntry);
-    }*/
 
 
 }
