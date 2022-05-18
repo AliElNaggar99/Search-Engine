@@ -1,5 +1,6 @@
 package Indexer;
 import Crawler.Database;
+import Ranker.RankerDBManager;
 import org.json.JSONObject;
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
@@ -15,7 +16,7 @@ import java.util.List;
 
 public class Indexer implements Runnable{
     //Crawler Database
-    Database CrawlerDB;
+    RankerDBManager RankerDB;
     //SearchIndexDBManager
     SearchIndexDBManager SearchIndexDB;
     //Url of the current Page
@@ -37,13 +38,14 @@ public class Indexer implements Runnable{
     int LengthOfDoc;
     Boolean isSpam = false;
     float SpamThreshold = 0.5F;
-
-    public Indexer(UrlData CurrentData , Database Crawler, SearchIndexDBManager SearchIndex) throws IOException {
+    double popularity;
+    public Indexer(UrlData CurrentData , RankerDBManager Ranker, SearchIndexDBManager SearchIndex) throws IOException {
         CurrentURL = CurrentData.URL;
         File input = new File(CurrentData.FilePath);
         CurrentDoc = Jsoup.parse(input,"UTF-8");
-        CrawlerDB = Crawler;
+        RankerDB = Ranker;
         SearchIndexDB = SearchIndex;
+        popularity = CurrentData.popularity;
     }
 
     public void run(){
@@ -57,12 +59,15 @@ public class Indexer implements Runnable{
         {
             synchronized(this.SearchIndexDB)
             {
-                this.SearchIndexDB.insertDocumentMap(this.DocumentMap,this.CurrentURL);
+                this.SearchIndexDB.insertDocumentMap(this.DocumentMap,this.CurrentURL,this.popularity);
             }
-            synchronized (this.CrawlerDB)
+            synchronized (this.RankerDB)
             {
-                this.CrawlerDB.updateIndex(this.CurrentURL);
+                this.RankerDB.updateIndex(this.CurrentURL);
             }
+        }
+        else {
+            this.SearchIndexDB.insertSpam(this.CurrentURL);
         }
     }
 

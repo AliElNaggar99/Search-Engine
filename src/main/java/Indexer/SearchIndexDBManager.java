@@ -3,8 +3,6 @@ package Indexer;
 import com.mongodb.*;
 
 import com.mongodb.client.*;
-import com.mongodb.client.model.Filters;
-import com.mongodb.client.model.Updates;
 import org.bson.Document;
 
 
@@ -51,8 +49,35 @@ public class SearchIndexDBManager {
         return output;
     }
 
+    //This function takes a word as input and return its JSON object
+    public JSONObject getKeyWordRegex(String keyword){
+        MongoCursor<Document> cur =  wordsCollection.find(new BasicDBObject("word", "/^"+ keyword+"/")).cursor();
+        JSONObject output = null;
+        if(cur.hasNext())
+            output = new JSONObject(cur.next().toJson());
+        return output;
+    }
+
+
+    public SearchWord getSearchWordExact(String keyword) {
+        MongoCursor<Document> cur =  wordsCollection.find(new BasicDBObject("word", keyword)).cursor();
+        SearchWord searchWord = new SearchWord();
+        searchWord.word = keyword;
+        while (cur.hasNext()) {
+            Document doc = cur.next();
+            WordData currentData = new WordData((Document) doc.get("position"));
+            currentData.url = (String) doc.get("url");
+            currentData.count = (int) doc.get("count");
+            currentData.lengthOfDoc = (int) doc.get("lengthOfDocument");
+            currentData.popularity = (double) doc.get("popularity");
+            searchWord.data.add(currentData);
+        }
+        searchWord.df = searchWord.data.size();
+        return searchWord;
+    }
+
     //this function will insert a hashMap to the DataBase
-    public void insertDocumentMap(Map<String,WordData> DocumentMap,String CurrentURL){
+    public void insertDocumentMap(Map<String,WordData> DocumentMap,String CurrentURL , double popularity){
         //First we need delete all data related to this index then add the need data
         wordsCollection.deleteMany(new BasicDBObject("url",CurrentURL));
         List <Document> indexerEntry = new ArrayList<>();
@@ -62,9 +87,14 @@ public class SearchIndexDBManager {
                             .append("url", entry.getValue().url)
                             .append("count", entry.getValue().count)
                             .append("lengthOfDocument", entry.getValue().lengthOfDoc)
+                            .append("popularity" , popularity)
                             .append("position", entry.getValue().position));
         }
         wordsCollection.insertMany(indexerEntry);
+    }
+
+    public void insertSpam(String Url){
+        spamCollection.insertOne(new Document("url" ,Url));
     }
 
 

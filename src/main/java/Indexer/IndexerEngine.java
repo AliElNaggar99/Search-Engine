@@ -2,6 +2,7 @@ package Indexer;
 
 import Crawler.Crawler;
 import Crawler.Database;
+import Ranker.RankerDBManager;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -22,13 +23,13 @@ public class IndexerEngine {
     //Databases that we use to access
 
     public static void main(String[] args) throws IOException {
-        Database CrawlerDB = new Database();
+        RankerDBManager RankerDB = new RankerDBManager();
         SearchIndexDBManager SearchIndexDB = new SearchIndexDBManager();
-        List <UrlData> toBeIndexed = CrawlerDB.getAllURLsData();
+        List <UrlData> toBeIndexed = RankerDB.getAllURLsData();
         ExecutorService executor = Executors.newFixedThreadPool(4);
         for(int i = 0 ; i < toBeIndexed.size() ; i++)
         {
-            executor.execute(new Indexer(toBeIndexed.get(i),CrawlerDB,SearchIndexDB));
+            executor.execute(new Indexer(toBeIndexed.get(i),RankerDB,SearchIndexDB));
         }
         executor.shutdown();
     }
