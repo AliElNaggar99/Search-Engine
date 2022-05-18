@@ -212,6 +212,17 @@ public class Database {
         return linkedHashSet;
     }
 
+    public Set<String> getAllURLs() {
+        MongoCursor<Document> cur = crawlerCollection.find(new BasicDBObject("Visited", 1)).cursor();
+        Set<String> linkedHashSet = new LinkedHashSet<>();
+        while (cur.hasNext()) {
+            Document doc = cur.next();
+            String URL = (String) doc.get("URL");
+            linkedHashSet.add(URL);
+        }
+        return linkedHashSet;
+    }
+
 }
 
 
