@@ -6,11 +6,12 @@ import com.sun.net.httpserver.HttpHandler;
 import java.io.*;
 import java.net.URI;
 import java.net.URLDecoder;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import org.json.*;
+
+
 public class EchoPostHandler implements HttpHandler {
+    Database DB;
 
     @Override
 
@@ -21,11 +22,21 @@ public class EchoPostHandler implements HttpHandler {
         BufferedReader br = new BufferedReader(isr);
         String query = br.readLine();
         parseQuery(query, parameters);
-
+        DB = new Database();
         // send response
+        Set<String> allURLs = DB.getAllURLs();
         String response = "";
-        for (String key : parameters.keySet())
-            response += key + " = " + parameters.get(key) + "\n";
+        JSONArray ja = new JSONArray();
+
+        for (int i=0;i<5;i++)
+        {
+            JSONObject jo = new JSONObject();
+            jo.put("url", "google.com");
+            jo.put("description", "bla bla bla");
+            jo.put("title", "chicago");
+            ja.put(jo);
+        }
+        response = ja.toString();
         he.sendResponseHeaders(200, response.length());
         OutputStream os = he.getResponseBody();
         os.write(response.toString().getBytes());
