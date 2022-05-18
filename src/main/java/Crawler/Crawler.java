@@ -145,7 +145,7 @@ public class Crawler implements Runnable {
 
     public static void readSeedList(List<String> queue) {
         try {
-            File myObj = new File("C:\\Users\\abdul\\IdeaProjects\\Search-Engine-master\\src\\main\\seed_list.txt");
+            File myObj = new File("seed_list.txt");
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine()) {
                 String data = myReader.nextLine();
