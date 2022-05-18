@@ -13,8 +13,7 @@ import java.util.*;
 import java.util.List;
 
 public class Indexer {
-    //Databases that we use to access
-    Database crawlerDB;
+
     SearchIndexDBManager SearchIndexDB;
     //Url of the current Page
     String CurrentURL;
@@ -55,10 +54,10 @@ public class Indexer {
         newEntry.put("url" , "www.asjsdad.com");
         //Index.updateWordURLList("hey" , newEntry);
         //Index.updateWordURLList("asdasdasdas",newEntry);
-        //indexTest.CurrentURL = toBeIndexed.get(0);
+        indexTest.CurrentURL = toBeIndexed.get(0);
         indexTest.ParseDocument(doc);
         indexTest.AddWordsToHashMap();
-        //Index.insertDocumentMap(indexTest.DocumentMap);
+        Index.insertDocumentMap(indexTest.DocumentMap, indexTest.CurrentURL);
     }
 
 

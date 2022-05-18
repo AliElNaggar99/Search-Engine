@@ -1,5 +1,6 @@
 package Crawler;
 
+import Indexer.UrlData;
 import com.mongodb.*;
 
 import com.mongodb.client.*;
@@ -222,6 +223,25 @@ public class Database {
             linkedHashSet.add(URL);
         }
         return linkedHashSet;
+    }
+
+    //To get the URL with the Text Location
+    public List<UrlData> getAllURLsData() {
+        MongoCursor<Document> cur = crawlerCollection.find(new BasicDBObject("Visited", 1)).cursor();
+        List<UrlData> DataList = new ArrayList<>();
+        while (cur.hasNext()) {
+            Document doc = cur.next();
+            UrlData currentData = new UrlData();
+            currentData.URL = (String) doc.get("URL");
+            currentData.FilePath = (String) doc.get("filepath");
+            DataList.add(currentData);
+        }
+        return DataList;
+    }
+
+    //To mark that we finished indexing
+    void updateIndex(String URL){
+        crawlerCollection.updateOne(Filters.eq("URL", URL), Updates.set("indexed", 1));
     }
 
 }
