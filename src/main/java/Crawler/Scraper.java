@@ -97,9 +97,9 @@ public class Scraper {
                     break;
                 }
             }
-            DB.visitLink(url, importance); //add the url to visited links
+            DB.visitLink(url, importance,crcVal,fileName); //add the url to visited links
             DB.insertLink(getLinks());     //add links found in href to the list
-            DB.insertHref(getLinks(), url,crcVal,fileName); //add to the href collection in the database the links with the main url and update crc of visited site
+            DB.insertHref(getLinks(), url); //add to the href collection in the database the links with the main url and update crc of visited site
         } catch (IOException ioe) {
             System.out.println("Error in the HTTP request " + ioe);
         } catch (PatternSyntaxException e) {

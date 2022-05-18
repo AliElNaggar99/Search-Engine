@@ -76,10 +76,8 @@ public class Database {
         return linkedHashSet;
     }
 
-    public void insertHref(List<String> Link,String baseURL,long crc,String filepath) {
+    public void insertHref(List<String> Link,String baseURL) {
         Document doc = crawlerCollection.find(eq("URL", baseURL)).first();
-        crawlerCollection.updateOne(doc,
-                Updates.combine(Updates.set("crc", crc), Updates.set("filepath", filepath)));
         Object objID = doc.get("_id");
         String ID = objID.toString();
         List<Document> crawlerEntry = new ArrayList<>();
@@ -126,19 +124,22 @@ public class Database {
                     Updates.set("Date", time));
         }
     }
-    public void visitLink(String Link,int importance){
+    public void visitLink(String Link,int importance,long crc,String filepath){
         Object findQuery = crawlerCollection.find(eq("URL", Link)).first();
+
         if (findQuery != null) {
             crawlerCollection.updateOne(Filters.eq("URL", Link),
-                    Updates.combine(Updates.set("Visited", 1), Updates.set("importance", importance)));
+                    Updates.combine(Updates.set("Visited", 1), Updates.set("importance", importance),
+                            Updates.set("crc", crc), Updates.set("filepath", filepath)));
         }
         else{
             Document crawlerEntry = new Document("URL", Link)
                     .append("Visited", 1)
                     .append("indexed", 0)
                     .append("importance",importance)
-                    .append("PageRank",(double) 0.0);
-
+                    .append("PageRank",(double) 0.0)
+                    .append("crc",crc)
+                    .append("filepath",filepath);
 
             crawlerCollection.insertOne(crawlerEntry);
         }
