@@ -6,6 +6,7 @@ import com.mongodb.client.*;
 import com.mongodb.client.model.Filters;
 import com.mongodb.client.model.Updates;
 import org.bson.Document;
+import org.bson.types.ObjectId;
 
 import javax.print.Doc;
 import java.net.UnknownHostException;
@@ -196,6 +197,15 @@ public class Database {
         if (objID==null)
             return false;
         return true;
+    }
+
+    public String getParentURL(String hrefedURL){
+        Document document = hrefCollection.find(eq("URL", hrefedURL)).first();
+        String objID= document.get("refTo").toString();
+        Document doc3 = crawlerCollection.find(eq("_id",new ObjectId(objID))).first();
+        if(doc3!=null)
+            return doc3.get("URL").toString();
+        return "";
     }
 
 }
