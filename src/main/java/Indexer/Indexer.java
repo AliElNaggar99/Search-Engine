@@ -38,14 +38,16 @@ public class Indexer implements Runnable{
     int LengthOfDoc;
     Boolean isSpam = false;
     float SpamThreshold = 0.5F;
-    double popularity;
+    UrlData urlData;
+    PorterStemmer Stemmer = new PorterStemmer();
+
     public Indexer(UrlData CurrentData , RankerDBManager Ranker, SearchIndexDBManager SearchIndex) throws IOException {
         CurrentURL = CurrentData.URL;
         File input = new File(CurrentData.FilePath);
         CurrentDoc = Jsoup.parse(input,"UTF-8");
         RankerDB = Ranker;
         SearchIndexDB = SearchIndex;
-        popularity = CurrentData.popularity;
+        urlData = CurrentData;
     }
 
     public void run(){
@@ -59,7 +61,7 @@ public class Indexer implements Runnable{
         {
             synchronized(this.SearchIndexDB)
             {
-                this.SearchIndexDB.insertDocumentMap(this.DocumentMap,this.CurrentURL,this.popularity);
+                this.SearchIndexDB.insertDocumentMap(this.DocumentMap,urlData);
             }
             synchronized (this.RankerDB)
             {
@@ -82,6 +84,8 @@ public class Indexer implements Runnable{
     void AddTitleToHashMap() {
         for(String Word : titleWords)
         {
+            //First we Stem the Words
+            Word = Stemmer.stemWord(Word);
             //First we will get the Word form the Map
             WordData CurrentWordData = DocumentMap.get(Word);
             //This mean this word doesn't exist we will create a new object for it and add it
@@ -109,6 +113,7 @@ public class Indexer implements Runnable{
         {
             for (String Word : headerMatrix.get(i))
             {
+                Word = Stemmer.stemWord(Word);
                 //First we will get the Word form the Map
                 WordData CurrentWordData = DocumentMap.get(Word);
                 //This mean this word doesn't exist we will create a new object for it and add it
@@ -133,6 +138,7 @@ public class Indexer implements Runnable{
     void AddBodyToHashMap() {
         for(String Word : ParagraphListsWords)
         {
+            Word = Stemmer.stemWord(Word);
             //First we will get the Word form the Map
             WordData CurrentWordData = DocumentMap.get(Word);
             //This mean this word doesn't exist we will create a new object for it and add it

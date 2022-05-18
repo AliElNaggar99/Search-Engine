@@ -52,7 +52,7 @@ public class RankerDBManager {
 
     //To get the URL with the Text Location
     public List<UrlData> getAllURLsData() {
-        MongoCursor<Document> cur = urlsCollection.find(new BasicDBObject("indexed", 0)).cursor();
+        MongoCursor<Document> cur = urlsCollection.find(new BasicDBObject("indexed",0)).cursor();
         List<UrlData> DataList = new ArrayList<>();
         while (cur.hasNext()) {
             Document doc = cur.next();
@@ -69,6 +69,8 @@ public class RankerDBManager {
         urlsCollection.updateOne(Filters.eq("url", URL), Updates.set("indexed", 1));
     }
 
-
+    public int getDocumentsSize() {
+        return urlsCollection.find(new BasicDBObject("indexed",1)).cursor().available();
+    }
 
 }

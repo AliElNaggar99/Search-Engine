@@ -11,6 +11,7 @@ public class WordData {
     public String url;
     public double popularity;
     public int lengthOfDoc;
+    public String filepath;
     public Map<String, Integer> position= new HashMap<String, Integer>();
 
     public WordData(){

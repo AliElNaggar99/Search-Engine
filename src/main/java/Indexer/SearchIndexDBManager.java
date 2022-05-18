@@ -70,6 +70,7 @@ public class SearchIndexDBManager {
             currentData.count = (int) doc.get("count");
             currentData.lengthOfDoc = (int) doc.get("lengthOfDocument");
             currentData.popularity = (double) doc.get("popularity");
+            currentData.filepath = (String) doc.get("filepath");
             searchWord.data.add(currentData);
         }
         searchWord.df = searchWord.data.size();
@@ -77,9 +78,9 @@ public class SearchIndexDBManager {
     }
 
     //this function will insert a hashMap to the DataBase
-    public void insertDocumentMap(Map<String,WordData> DocumentMap,String CurrentURL , double popularity){
+    public void insertDocumentMap(Map<String,WordData> DocumentMap,UrlData currentData){
         //First we need delete all data related to this index then add the need data
-        wordsCollection.deleteMany(new BasicDBObject("url",CurrentURL));
+        wordsCollection.deleteMany(new BasicDBObject("url",currentData.URL));
         List <Document> indexerEntry = new ArrayList<>();
         for(Map.Entry<String, WordData> entry: DocumentMap.entrySet())
         {
@@ -87,7 +88,8 @@ public class SearchIndexDBManager {
                             .append("url", entry.getValue().url)
                             .append("count", entry.getValue().count)
                             .append("lengthOfDocument", entry.getValue().lengthOfDoc)
-                            .append("popularity" , popularity)
+                            .append("popularity" , currentData.popularity)
+                            .append("filepath" , currentData.FilePath)
                             .append("position", entry.getValue().position));
         }
         wordsCollection.insertMany(indexerEntry);
@@ -96,7 +98,5 @@ public class SearchIndexDBManager {
     public void insertSpam(String Url){
         spamCollection.insertOne(new Document("url" ,Url));
     }
-
-
 
 }
