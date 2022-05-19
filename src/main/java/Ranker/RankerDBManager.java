@@ -22,7 +22,7 @@ public class RankerDBManager {
     public RankerDBManager(){
         System.setProperty("jdk.tls.trustNameService", "true");
         //For Local connecting to the database
-        ConnectionString connectionString = new ConnectionString("mongodb://localhost:27017");
+        ConnectionString connectionString = new ConnectionString("mongodb+srv://Ali:1234asd@search-index.sdm5w.mongodb.net/?retryWrites=true&w=majority");
         MongoClientSettings settings = MongoClientSettings.builder()
                 .applyConnectionString(connectionString)
                 .serverApi(ServerApi.builder()
@@ -30,7 +30,7 @@ public class RankerDBManager {
                         .build())
                 .build();
         MongoClient mongoClient = MongoClients.create(settings);
-        MongoDatabase database = mongoClient.getDatabase("RankerDB");
+        MongoDatabase database = mongoClient.getDatabase("SearchIndex");
         this.RankerDB = database;
         this.mongoClient  = mongoClient;
         urlsCollection = RankerDB.getCollection("urls");

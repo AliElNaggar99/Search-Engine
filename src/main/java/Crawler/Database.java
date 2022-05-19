@@ -35,8 +35,8 @@ public class Database {
 //        String uri = "mongodb://localhost:27017";
 //        MongoClient mongoClient = MongoClients.create(uri);
         //For Local connecting to the database
-        ConnectionString connectionString = new ConnectionString("mongodb://localhost:27017");
-        //ConnectionString connectionString = new ConnectionString("mongodb+srv://sherno:asd123@cluster0.u308m.mongodb.net/?retryWrites=true&w=majority");
+        //ConnectionString connectionString = new ConnectionString("mongodb://localhost:27017");
+        ConnectionString connectionString = new ConnectionString("mongodb+srv://sherno:asd123@cluster0.u308m.mongodb.net/?retryWrites=true&w=majority");
         MongoClientSettings settings = MongoClientSettings.builder()
                 .applyConnectionString(connectionString)
                 .serverApi(ServerApi.builder()

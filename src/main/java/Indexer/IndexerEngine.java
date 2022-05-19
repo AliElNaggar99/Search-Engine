@@ -3,6 +3,7 @@ package Indexer;
 import Crawler.Crawler;
 import Crawler.Database;
 import Ranker.RankerDBManager;
+import Ranker.pageRanker;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -25,6 +26,8 @@ public class IndexerEngine {
     public static void main(String[] args) throws IOException {
         RankerDBManager RankerDB = new RankerDBManager();
         SearchIndexDBManager SearchIndexDB = new SearchIndexDBManager();
+        ///Run PageRanker Algorithms
+        pageRanker ranker = new pageRanker(1000,0.85);
         List <UrlData> toBeIndexed = RankerDB.getAllURLsData();
         ExecutorService executor = Executors.newFixedThreadPool(4);
         for(int i = 0 ; i < toBeIndexed.size() ; i++)
