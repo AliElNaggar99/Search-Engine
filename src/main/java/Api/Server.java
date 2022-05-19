@@ -14,8 +14,8 @@ public class Server {
             System.out.println("server started at " + port);
             server.createContext("/", new RootHandler());
             server.createContext("/echoHeader", new EchoHeaderHandler());
-            server.createContext("/echoGet", new EchoGetHandler());
-            server.createContext("/echoPost", new EchoPostHandler());
+            server.createContext("/search", new SearchPostHandler());
+            server.createContext("/suggest", new SuggestionPostHandler());
             server.setExecutor(null);
             server.start();
         } catch (IOException e) {

@@ -75,8 +75,10 @@ public class Scraper {
             ;
             try {
                 FileWriter myWriter = new FileWriter(fileName);
-                myWriter.write(this.htmlDocument.toString());
-                myWriter.close();
+                synchronized (myWriter) {   //some threads closed the myWriter
+                    myWriter.write(this.htmlDocument.toString());
+                    myWriter.close();
+                }
             } catch (IOException e) {
                 System.out.println("An error occurred writing the file.");
                 e.printStackTrace();
@@ -158,7 +160,7 @@ public class Scraper {
             if (robotForAll.get(i).equals("Disallow:"))
                 forbidden.add(Domain + robotForAll.get(i + 1));     //add the disallow of the domain to the forbidden
             if (robotForAll.get(i).equals("Allow:"))
-                allowed.add(Domain + robotForAll.get(i + 1));       //add the sallow of the domain to the allowed
+                allowed.add(Domain + robotForAll.get(i + 1));       //add the allow of the domain to the allowed
         }
         forbiddenList.put(Domain, forbidden);                   //add to the hashmap
         allowedList.put(Domain, allowed);                       //add to the hashmap

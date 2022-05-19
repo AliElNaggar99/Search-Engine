@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 public class RootHandler implements HttpHandler {
-    int port = 9000;
+    int port = 6969;
     @Override
     public void handle(HttpExchange he) throws IOException {
         String response = "<h1>Server start success if you see this message</h1>" + "<h1>Port: " + port + "</h1>";

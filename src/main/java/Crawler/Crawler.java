@@ -96,7 +96,7 @@ public class Crawler implements Runnable {
                     synchronized (Visited) {
                         try {
                             String nextUrl = queue.remove(0);   //pop nexturl
-                            currentUrl = Visited.contains(nextUrl) ? null : nextUrl;    //if nexturl in visited dont add, otherwise do
+                            currentUrl = Visited.contains(nextUrl) ? null : nextUrl;    //if nexturl in visited dont add or scrape, otherwise do
 
                         } catch (Exception ignored) {
 
