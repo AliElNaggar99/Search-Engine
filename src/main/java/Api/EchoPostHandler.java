@@ -1,5 +1,6 @@
 package Api;
 
+import Indexer.SearchIndexDBManager;
 import Indexer.UrlData;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
@@ -18,6 +19,7 @@ import org.jsoup.nodes.Document;
 public class EchoPostHandler implements HttpHandler {
     Database DB;
     QueryProcessor QP;
+    SearchIndexDBManager SearchIndexDB;
     @Override
 
     public void handle(HttpExchange he) throws IOException {
@@ -29,6 +31,7 @@ public class EchoPostHandler implements HttpHandler {
         parseQuery(query, parameters);
         DB = new Database();
         QP = new QueryProcessor();
+        SearchIndexDB = new SearchIndexDBManager();
         // send response
         String response = "";
         JSONArray ja = new JSONArray();
@@ -43,8 +46,8 @@ public class EchoPostHandler implements HttpHandler {
             jo.put("description", QP.getDescription(CurrentDoc,query));
             ja.put(jo);
         }
-        System.out.println(ja);
         response = ja.toString();
+        SearchIndexDB.insertSearchWord(query);
         he.sendResponseHeaders(200, response.length());
         OutputStream os = he.getResponseBody();
         os.write(response.toString().getBytes());

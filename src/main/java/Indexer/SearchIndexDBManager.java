@@ -3,6 +3,8 @@ package Indexer;
 import com.mongodb.*;
 
 import com.mongodb.client.*;
+import com.mongodb.client.model.Filters;
+import com.mongodb.client.model.Updates;
 import org.bson.Document;
 
 
@@ -20,7 +22,7 @@ public class SearchIndexDBManager {
     MongoDatabase SearchIndexDB;
     MongoCollection<Document> wordsCollection ;
     MongoCollection<Document> spamCollection;
-    MongoCollection<Document> DateCollection;
+    MongoCollection<Document> historyCollection;
 
     //Constructor which also connects to the DB
     public SearchIndexDBManager() throws UnknownHostException {
@@ -38,6 +40,7 @@ public class SearchIndexDBManager {
         SearchIndexDB =  database;
         wordsCollection = SearchIndexDB.getCollection("keywords");
         spamCollection = SearchIndexDB.getCollection("Spam");
+        historyCollection = SearchIndexDB.getCollection("history");
     }
 
     //This function takes a word as input and return its JSON object
@@ -97,6 +100,33 @@ public class SearchIndexDBManager {
 
     public void insertSpam(String Url){
         spamCollection.insertOne(new Document("url" ,Url));
+    }
+
+    public void insertSearchWord(String word){
+        //this words exits
+        MongoCursor<Document> cur = wordsCollection.find(new BasicDBObject("word",word)).cursor();
+        if(cur.available() > 0)
+        {
+            int count = (int) cur.next().get("count")+1;
+            historyCollection.updateOne(Filters.eq("word", word),
+                    Updates.set("count", count));
+        }
+        else
+        {
+            historyCollection.insertOne(new Document("word" , word).append("count" , 1));
+        }
+    }
+
+    public List<String> getHistoryWords(String word)
+    {
+        MongoCursor<Document> cur = historyCollection.find(new BasicDBObject("word", "/^"+ word+"/")).cursor();
+        List <String> historyWords = new ArrayList<>();
+        while (cur.hasNext()) {
+            Document doc = cur.next();
+            String currentWord = (String) doc.get("word");
+            historyWords.add(currentWord);
+        }
+        return historyWords;
     }
 
 }

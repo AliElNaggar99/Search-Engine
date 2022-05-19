@@ -27,9 +27,9 @@ public class IndexerEngine {
         RankerDBManager RankerDB = new RankerDBManager();
         SearchIndexDBManager SearchIndexDB = new SearchIndexDBManager();
         ///Run PageRanker Algorithms
-        pageRanker ranker = new pageRanker(1000,0.85);
+        pageRanker ranker = new pageRanker(10,0.85);
         List <UrlData> toBeIndexed = RankerDB.getAllURLsData();
-        ExecutorService executor = Executors.newFixedThreadPool(4);
+        ExecutorService executor = Executors.newFixedThreadPool(20);
         for(int i = 0 ; i < toBeIndexed.size() ; i++)
         {
             executor.execute(new Indexer(toBeIndexed.get(i),RankerDB,SearchIndexDB));
