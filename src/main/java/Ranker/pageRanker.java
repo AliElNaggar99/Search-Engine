@@ -38,6 +38,7 @@ public class pageRanker {
         {
             for(UrlData url : urls)
             {
+                System.out.println(url);
                 for(String parent : parents.get(url.URL))
                 {
 
@@ -47,6 +48,7 @@ public class pageRanker {
                 url.popularity=rank;
                 popularity.put(url.URL,url);
                 value=0;
+                System.out.println(popularity);
             }
         }
         RankerDB.insertUrlMap(popularity);

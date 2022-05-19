@@ -27,7 +27,8 @@ public class SearchIndexDBManager {
     //Constructor which also connects to the DB
     public SearchIndexDBManager() throws UnknownHostException {
         System.setProperty("jdk.tls.trustNameService", "true");
-        ConnectionString connectionString = new ConnectionString("mongodb+srv://Ali:1234asd@search-index.sdm5w.mongodb.net/?retryWrites=true&w=majority");
+        ConnectionString connectionString = new ConnectionString("mongodb://localhost:27017");
+        //ConnectionString connectionString = new ConnectionString("mongodb+srv://Ali:1234asd@search-index.sdm5w.mongodb.net/?retryWrites=true&w=majority");
         MongoClientSettings settings = MongoClientSettings.builder()
                 .applyConnectionString(connectionString)
                 .serverApi(ServerApi.builder()
@@ -117,14 +118,15 @@ public class SearchIndexDBManager {
         }
     }
 
-    public List<String> getHistoryWords(String word)
+    public Set<String> getHistoryWords(String word)
     {
-        MongoCursor<Document> cur = historyCollection.find(new BasicDBObject("word", "/^"+ word+"/")).cursor();
-        List <String> historyWords = new ArrayList<>();
+        MongoCursor<Document> cur = historyCollection.find().cursor();
+        Set <String> historyWords = new HashSet<>();
         while (cur.hasNext()) {
             Document doc = cur.next();
             String currentWord = (String) doc.get("word");
-            historyWords.add(currentWord);
+            if(currentWord.startsWith(word))
+                historyWords.add(currentWord);
         }
         return historyWords;
     }

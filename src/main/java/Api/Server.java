@@ -7,7 +7,7 @@ import java.net.InetSocketAddress;
 
 public class Server {
     public static void main(String[] args) {
-        int port = 6969;
+        int port = 9000;
         HttpServer server = null;
         try {
             server = HttpServer.create(new InetSocketAddress(port), 0);

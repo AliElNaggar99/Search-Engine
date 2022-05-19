@@ -31,7 +31,7 @@ public class SuggestionPostHandler implements HttpHandler {
         SearchIndexDBManager SIDB = new SearchIndexDBManager();
         SearchIndexDB = new SearchIndexDBManager();
         // send response
-        List<String> Results= new ArrayList<String>();
+        Set<String> Results= new HashSet<>();
         Results = SIDB.getHistoryWords(query);
 
         JSONObject jo = new JSONObject();
